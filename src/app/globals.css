@@ -51,31 +51,33 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --primary: #009688;
+  --primary-foreground: #fff;
+  --secondary: #4db6ac;
+  --secondary-foreground: #fff;
+  --muted: #b2dfdb;
+  --muted-foreground: #00695c;
+  --accent: #009688;
+  --accent-foreground: #fff;
+  --destructive: #e57373;
+  --border: #b2dfdb;
+  --input: #b2dfdb;
+  --ring: #009688;
+  --chart-1: #009688;
+  --chart-2: #4db6ac;
+  --chart-3: #b2dfdb;
+  --chart-4: #00695c;
+  --chart-5: #26a69a;
+  --sidebar: #e0f2f1;
+  --sidebar-foreground: #00695c;
+  --sidebar-primary: #009688;
+  --sidebar-primary-foreground: #fff;
+  --sidebar-accent: #4db6ac;
+  --sidebar-accent-foreground: #fff;
+  --sidebar-border: #b2dfdb;
+  --sidebar-ring: #009688;
+  --accent-hover: #e0f2f1;
+  --accent-foreground-hover: #00695c;
 }
 
 .dark {
@@ -119,4 +121,14 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.button-ghost-menu:hover {
+  background-color: var(--accent-hover) !important;
+  color: var(--accent-foreground-hover) !important;
+}
+
+.dark .button-ghost-menu:hover {
+  background-color: inherit !important;
+  color: inherit !important;
 }
