@@ -15,9 +15,9 @@ import { useState, useEffect } from "react"
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "Portfolio", href: "#portfolio" },
-  { name: "About", href: "#about" },
-  { name: "Contact", href: "#contact" },
+  { name: "Portfolio", href: "/portfolio" },
+  { name: "About", href: "/about" },
+  { name: "Contact", href: "/contact" },
 ]
 
 const socials = [

@@ -36,23 +36,36 @@ export const content = {
       }
     ]
   },
-  projects: {
-    title: "My Projects",
-    items: [
-      {
-        title: "Project 1",
-        description: "A full-stack web application built with Next.js and Node.js",
-        image: "/images/project1.png",
-        link: "https://github.com/username/project1"
-      },
-      {
-        title: "Project 2",
-        description: "A mobile app built with React Native",
-        image: "/images/project2.png",
-        link: "https://github.com/username/project2"
-      }
-    ]
-  },
+  projects: [
+    {
+      title: "E-Commerce Platform",
+      timeframe: "Jan 2023 - Dec 2023",
+      role: "Lead Fullstack Developer",
+      description: "Developed a scalable e-commerce platform supporting thousands of concurrent users, with real-time inventory, payment integration, and an admin dashboard. Implemented authentication, product management, and order processing workflows.",
+      technologies: ["Next.js", "React", "Node.js", "Express", "MongoDB", "Stripe API", "TailwindCSS"]
+    },
+    {
+      title: "Project Management SaaS",
+      timeframe: "Mar 2022 - Nov 2022",
+      role: "Fullstack Developer",
+      description: "Built a SaaS project management tool for teams, featuring kanban boards, real-time collaboration, notifications, and analytics. Focused on robust backend APIs, secure authentication, and a responsive UI.",
+      technologies: ["React", "Next.js", "PostgreSQL", "Prisma", "Socket.io", "TypeScript", "Chakra UI"]
+    },
+    {
+      title: "Social Media Analytics Dashboard",
+      timeframe: "May 2021 - Feb 2022",
+      role: "Fullstack Developer",
+      description: "Created a dashboard for tracking and visualizing social media metrics across multiple platforms. Integrated third-party APIs, built custom data visualizations, and implemented user authentication and role-based access.",
+      technologies: ["Vue.js", "Node.js", "Express", "D3.js", "MySQL", "JWT"]
+    },
+    {
+      title: "Remote Learning Platform",
+      timeframe: "Aug 2020 - Apr 2021",
+      role: "Fullstack Developer",
+      description: "Engineered a remote learning platform with live video classes, assignments, and student-teacher messaging. Focused on real-time features, secure file uploads, and a mobile-friendly interface.",
+      technologies: ["React", "Next.js", "Firebase", "WebRTC", "Material-UI", "Cloud Functions"]
+    }
+  ],
   contact: {
     title: "Get In Touch",
     description: "Feel free to reach out to me for any questions or opportunities!",
