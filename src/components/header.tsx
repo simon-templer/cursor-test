@@ -2,12 +2,11 @@
 import Link from "next/link"
 import { ModeToggle } from "./mode-toggle"
 import { Button } from "./ui/button"
-import { Menu, X } from "lucide-react"
+import { Menu } from "lucide-react"
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
-  SheetClose,
   SheetTitle,
 } from "./ui/sheet"
 import Image from "next/image"
