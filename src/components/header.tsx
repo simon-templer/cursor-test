@@ -27,7 +27,7 @@ const socials = [
 ]
 
 export function Header() {
-  const { theme } = useTheme();
+  const { theme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   useEffect(() => { setMounted(true); }, []);
   return (
@@ -35,7 +35,7 @@ export function Header() {
       <div className="flex h-16 items-center w-full">
         <Link href="/" className="flex items-center pl-4 sm:pl-8 lg:pl-12">
           {mounted ? (
-            theme === "dark" ? (
+            (theme === "dark" || (theme === "system" && resolvedTheme === "dark")) ? (
               <Image
                 src="/images/konoto_logo_black_transparent.png"
                 alt="KONOTO Logo Black"
