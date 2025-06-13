@@ -4,7 +4,8 @@ export const content = {
     title: "Full Stack Developer",
     description: "I design and code beautifully simple things, and I love what I do. Just simple like that!",
     image: "/images/hero-image.jpg",
-    resumeLink: "/resume.pdf"
+    resumeLink: "/downloads/resume_v1.pdf",
+    downloadFilename: "John_Doe_Resume.pdf"
   },
   about: {
     title: "About Me",

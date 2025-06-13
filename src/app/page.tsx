@@ -21,7 +21,7 @@ export default function Home() {
             </p>
             <div className="flex gap-4">
               <Button asChild size="lg">
-                <Link href={content.hero.resumeLink}>
+                <Link href={content.hero.resumeLink} download={content.hero.downloadFilename}>
                   Download Resume
                 </Link>
               </Button>
