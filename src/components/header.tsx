@@ -8,6 +8,7 @@ import {
   SheetContent,
   SheetTrigger,
   SheetTitle,
+  SheetClose,
 } from "./ui/sheet"
 import Image from "next/image"
 import { useTheme } from "next-themes"
@@ -78,13 +79,14 @@ export function Header() {
               </div>
               <nav className="flex-1 flex flex-col items-start justify-center px-8 gap-8">
                 {navigation.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className="text-4xl font-light mb-2 hover:underline"
-                  >
-                    {item.name}
-                  </Link>
+                  <SheetClose key={item.href} asChild>
+                    <Link
+                      href={item.href}
+                      className="text-4xl font-light mb-2 hover:underline"
+                    >
+                      {item.name}
+                    </Link>
+                  </SheetClose>
                 ))}
               </nav>
               <div className="flex justify-between items-end w-full px-6 pb-4 text-sm">
@@ -122,13 +124,14 @@ export function Header() {
               </div>
               <nav className="flex-1 flex flex-col items-start justify-center px-8 gap-8">
                 {navigation.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className="text-4xl font-light mb-2 hover:underline"
-                  >
-                    {item.name}
-                  </Link>
+                  <SheetClose key={item.href} asChild>
+                    <Link
+                      href={item.href}
+                      className="text-4xl font-light mb-2 hover:underline"
+                    >
+                      {item.name}
+                    </Link>
+                  </SheetClose>
                 ))}
               </nav>
               <div className="flex justify-between items-end w-full px-6 pb-4 text-sm">
