@@ -120,7 +120,8 @@
   }
   body {
     @apply bg-background text-foreground;
-    overflow-y: scroll; /* Always show vertical scrollbar */
+    overflow-x: hidden;
+    width: 100%;
   }
 }
 
