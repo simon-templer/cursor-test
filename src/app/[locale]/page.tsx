@@ -32,9 +32,9 @@ export default async function HomePage({
             </p>
             <div className="flex gap-4">
               <Button asChild size="lg">
-                <Link href={content.hero.resumeLink} download={content.hero.downloadFilename}>
+                <a href={content.hero.resumeLink} download={content.hero.downloadFilename} target="_blank" rel="noopener noreferrer">
                   {t('home.downloadResume')}
-                </Link>
+                </a>
               </Button>
               <Button variant="outline" size="lg" asChild>
                 <Link href="/contact">
