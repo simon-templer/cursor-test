@@ -1,9 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { content } from "@/config/content";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
-export default function Home() {
+export default function HomePage() {
+  const t = useTranslations();
+  
   return (
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
@@ -22,12 +25,12 @@ export default function Home() {
             <div className="flex gap-4">
               <Button asChild size="lg">
                 <Link href={content.hero.resumeLink} download={content.hero.downloadFilename}>
-                  Download Resume
+                  {t('home.downloadResume')}
                 </Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
                 <Link href="#contact">
-                  Contact Me
+                  {t('home.contactMe')}
                 </Link>
               </Button>
             </div>
@@ -35,7 +38,7 @@ export default function Home() {
           <div className="relative w-full h-full">
             <Image
               src={content.hero.image}
-              alt="Hero Image"
+              alt={t('home.heroImageAlt')}
               fill
               className="object-cover"
               priority
@@ -45,4 +48,4 @@ export default function Home() {
       </section>
     </main>
   );
-}
+} 

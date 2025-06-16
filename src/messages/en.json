@@ -1,0 +1,22 @@
+{
+  "navigation": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Welcome",
+    "description": "This is the home page",
+    "downloadResume": "Download Resume",
+    "contactMe": "Contact Me",
+    "heroImageAlt": "Hero Image"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "description": "Check out my work"
+  },
+  "language": {
+    "toggle": "Toggle language"
+  }
+} 

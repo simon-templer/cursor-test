@@ -1,0 +1,22 @@
+{
+  "navigation": {
+    "home": "Startseite",
+    "portfolio": "Portfolio",
+    "about": "Über mich",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "title": "Willkommen",
+    "description": "Dies ist die Startseite",
+    "downloadResume": "Lebenslauf herunterladen",
+    "contactMe": "Kontakt",
+    "heroImageAlt": "Hero-Bild"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "description": "Schauen Sie sich meine Arbeit an"
+  },
+  "language": {
+    "toggle": "Sprache ändern"
+  }
+} 

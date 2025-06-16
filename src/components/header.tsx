@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link"
 import { ModeToggle } from "./mode-toggle"
+import { LanguageToggle } from "./language-toggle"
 import { Button } from "./ui/button"
 import { Menu } from "lucide-react"
 import {
@@ -13,12 +14,13 @@ import {
 import Image from "next/image"
 import { useTheme } from "next-themes"
 import { useState, useEffect } from "react"
+import { useTranslations } from "next-intl"
 
 const navigation = [
-  { name: "Home", href: "/" },
-  { name: "Portfolio", href: "/portfolio" },
-  { name: "About", href: "/about" },
-  { name: "Contact", href: "/contact" },
+  { name: "home", href: "/" },
+  { name: "portfolio", href: "/portfolio" },
+  { name: "about", href: "/about" },
+  { name: "contact", href: "/contact" },
 ]
 
 const socials = [
@@ -30,6 +32,8 @@ const socials = [
 export function Header() {
   const { theme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const t = useTranslations('navigation');
+  
   useEffect(() => { setMounted(true); }, []);
   return (
     <header className="absolute top-0 left-0 w-full z-50 bg-transparent">
@@ -59,6 +63,7 @@ export function Header() {
         </Link>
         {/* Desktop Menu Button */}
         <div className="hidden md:flex items-center gap-2 ml-auto">
+          <LanguageToggle />
           <ModeToggle />
           <Sheet>
             <SheetTrigger asChild>
@@ -84,7 +89,7 @@ export function Header() {
                       href={item.href}
                       className="text-4xl font-light mb-2 hover:underline"
                     >
-                      {item.name}
+                      {t(item.name)}
                     </Link>
                   </SheetClose>
                 ))}
@@ -104,6 +109,7 @@ export function Header() {
         </div>
         {/* Mobile Menu Button */}
         <div className="flex md:hidden items-center gap-2 ml-auto">
+          <LanguageToggle />
           <ModeToggle />
           <Sheet>
             <SheetTrigger asChild>
@@ -129,7 +135,7 @@ export function Header() {
                       href={item.href}
                       className="text-4xl font-light mb-2 hover:underline"
                     >
-                      {item.name}
+                      {t(item.name)}
                     </Link>
                   </SheetClose>
                 ))}

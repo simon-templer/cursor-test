@@ -1,0 +1,22 @@
+{
+  "navigation": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "about": "Chi sono",
+    "contact": "Contatti"
+  },
+  "home": {
+    "title": "Benvenuto",
+    "description": "Questa è la pagina principale",
+    "downloadResume": "Scarica CV",
+    "contactMe": "Contattami",
+    "heroImageAlt": "Immagine hero"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "description": "Scopri il mio lavoro"
+  },
+  "language": {
+    "toggle": "Cambia lingua"
+  }
+} 

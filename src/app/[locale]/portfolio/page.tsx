@@ -1,11 +1,15 @@
 import React from "react";
 import { content } from "@/config/content";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 export default function PortfolioPage() {
+  const t = useTranslations();
+
   return (
     <main className="min-h-screen flex flex-col items-center px-4 py-12 bg-background text-foreground">
       <section className="w-full max-w-3xl flex flex-col items-start">
-        <h1 className="text-5xl font-serif font-normal mb-2 text-left pt-12">Portfolio</h1>
+        <h1 className="text-5xl font-serif font-normal mb-2 text-left pt-12">{t('portfolio.title')}</h1>
         <hr className="border-t border-gray-300 dark:border-gray-500 w-1/2 mb-8 ml-0" />
         <div className="w-full flex flex-col gap-8">
           {content.projects?.map((project, idx) => (
