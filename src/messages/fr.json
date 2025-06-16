@@ -30,6 +30,7 @@
     "emailPlaceholder": "E-mail",
     "messagePlaceholder": "Message",
     "success": "Votre message a été envoyé !",
-    "error": "Une erreur s'est produite lors de l'envoi de votre message."
+    "error": "Une erreur s'est produite lors de l'envoi de votre message.",
+    "autoresponse": "Merci de nous avoir contactés ! Nous avons bien reçu votre demande et nous vous répondrons bientôt."
   }
 } 

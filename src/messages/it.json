@@ -30,6 +30,7 @@
     "emailPlaceholder": "Email",
     "messagePlaceholder": "Messaggio",
     "success": "Il tuo messaggio è stato inviato!",
-    "error": "Si è verificato un errore durante l'invio del messaggio."
+    "error": "Si è verificato un errore durante l'invio del messaggio.",
+    "autoresponse": "Grazie per averci contattato! Abbiamo ricevuto la tua richiesta e ti risponderemo al più presto."
   }
 } 

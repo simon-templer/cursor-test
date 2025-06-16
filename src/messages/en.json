@@ -30,6 +30,7 @@
     "emailPlaceholder": "Email",
     "messagePlaceholder": "Message",
     "success": "Your message has been sent!",
-    "error": "There was an error sending your message."
+    "error": "There was an error sending your message.",
+    "autoresponse": "Thank you for contacting us! We have received your request and will get back to you soon."
   }
 } 

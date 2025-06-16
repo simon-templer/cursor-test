@@ -30,6 +30,7 @@
     "emailPlaceholder": "E-Mail",
     "messagePlaceholder": "Nachricht",
     "success": "Ihre Nachricht wurde gesendet!",
-    "error": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten."
+    "error": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten.",
+    "autoresponse": "Vielen Dank für Ihre Kontaktaufnahme! Wir haben Ihre Anfrage erhalten und melden uns in Kürze."
   }
 } 

@@ -1,14 +1,44 @@
+"use client";
 import { useTranslations } from 'next-intl';
 import { content } from '@/config/content';
 import { Button } from '@/components/ui/button';
-import React from 'react';
+import { Toaster } from '@/components/ui/sonner';
+import { toast } from 'sonner';
+import React, { useRef, useState } from 'react';
 
-export default function ContactPage({ params: { locale } }: { params: { locale: 'en' | 'de' | 'fr' | 'it' } }) {
+export default function ContactPage({ params }: { params: Promise<{ locale: 'en' | 'de' | 'fr' | 'it' }> }) {
+  const { locale } = React.use(params);
   const t = useTranslations('contact');
   const contact = content.contactForm;
+  const formRef = useRef<HTMLFormElement>(null);
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData,
+      });
+      if (response.ok) {
+        toast.success(t('success'));
+        form.reset();
+      } else {
+        toast.error(t('error'));
+      }
+    } catch {
+      toast.error(t('error'));
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-background text-foreground transition-colors">
+      <Toaster />
       <div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row gap-12 p-8">
         {/* Left: Contact Info */}
         <div className="flex-1 flex flex-col justify-center">
@@ -20,7 +50,8 @@ export default function ContactPage({ params: { locale } }: { params: { locale: 
           <p className="mb-4 text-base text-muted-foreground">{contact.description[locale]}</p>
         </div>
         {/* Right: Contact Form */}
-        <form className="flex-1 flex flex-col gap-4" aria-label="Contact form">
+        <form ref={formRef} className="flex-1 flex flex-col gap-4" aria-label="Contact form" onSubmit={handleSubmit}>
+          <input type="hidden" name="access_key" value={process.env.NEXT_PUBLIC_WEB3FORMS_API_KEY} />
           <div className="flex gap-4">
             <input
               type="text"
@@ -47,7 +78,7 @@ export default function ContactPage({ params: { locale } }: { params: { locale: 
             aria-label={t('messagePlaceholder')}
           />
           <div>
-            <Button type="submit" className="px-8 py-2">{t('send')}</Button>
+            <Button type="submit" className="px-8 py-2" disabled={loading}>{loading ? '...' : t('send')}</Button>
           </div>
         </form>
       </div>
