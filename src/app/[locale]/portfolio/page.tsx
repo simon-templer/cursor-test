@@ -1,7 +1,6 @@
 import React from "react";
 import { content } from "@/config/content";
 import { getTranslations } from 'next-intl/server';
-import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 
 type Locale = typeof routing.locales[number];
