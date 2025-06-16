@@ -238,5 +238,25 @@ export const content = {
       fr: "New York, États-Unis",
       it: "New York, USA"
     }
+  },
+  contactForm: {
+    email: {
+      en: "name@domain.com",
+      de: "name@domain.com",
+      fr: "name@domain.com",
+      it: "name@domain.com"
+    },
+    phone: {
+      en: "(555)123-4567",
+      de: "(555)123-4567",
+      fr: "(555)123-4567",
+      it: "(555)123-4567"
+    },
+    description: {
+      en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar nisi at imperdiet pharetra.",
+      de: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar nisi at imperdiet pharetra.",
+      fr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar nisi at imperdiet pharetra.",
+      it: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar nisi at imperdiet pharetra."
+    }
   }
 } 

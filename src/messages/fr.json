@@ -18,5 +18,18 @@
   },
   "language": {
     "toggle": "Changer de langue"
+  },
+  "contact": {
+    "header": "Contactez-moi",
+    "getInTouch": "Entrer en contact",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "message": "Message",
+    "send": "Envoyer",
+    "namePlaceholder": "Nom",
+    "emailPlaceholder": "E-mail",
+    "messagePlaceholder": "Message",
+    "success": "Votre message a été envoyé !",
+    "error": "Une erreur s'est produite lors de l'envoi de votre message."
   }
 } 

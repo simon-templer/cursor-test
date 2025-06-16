@@ -13,12 +13,12 @@ export default async function HomePage({
   params: Promise<{ locale: Locale }>
 }) {
   const { locale } = await params;
-  const t = await getTranslations();
+  const t = await getTranslations(); 
   
   return (
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
-      <section className="h-screen w-full overflow-hidden">
+      <section className="h-screen w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 h-full w-full items-center">
           <div className="flex flex-col justify-center items-start h-full w-full pl-12">
             <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
@@ -37,7 +37,7 @@ export default async function HomePage({
                 </Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <Link href="#contact">
+                <Link href="/contact">
                   {t('home.contactMe')}
                 </Link>
               </Button>
