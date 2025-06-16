@@ -15,6 +15,7 @@ import Image from "next/image"
 import { useTheme } from "next-themes"
 import { useState, useEffect } from "react"
 import { useTranslations } from "next-intl"
+import { Link as IntlLink } from "@/i18n/navigation"
 
 const navigation = [
   { name: "home", href: "/" },
@@ -38,7 +39,7 @@ export function Header() {
   return (
     <header className="absolute top-0 left-0 w-full z-50 bg-transparent">
       <div className="flex h-16 items-center w-full">
-        <Link href="/" className="flex items-center pl-4 sm:pl-8 lg:pl-12">
+        <IntlLink href="/" className="flex items-center pl-4 sm:pl-8 lg:pl-12">
           {mounted ? (
             (theme === "dark" || (theme === "system" && resolvedTheme === "dark")) ? (
               <Image
@@ -60,7 +61,7 @@ export function Header() {
               />
             )
           ) : null}
-        </Link>
+        </IntlLink>
         {/* Desktop Menu Button */}
         <div className="hidden md:flex items-center gap-2 ml-auto">
           <LanguageToggle />
