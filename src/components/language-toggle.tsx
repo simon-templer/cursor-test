@@ -28,7 +28,7 @@ export function LanguageToggle() {
   };
 
   return (
-    <DropdownMenu>
+    <DropdownMenu modal={false}>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="icon" className="h-9 w-9">
           <Globe className="h-5 w-5 text-[#009688] dark:text-white" />
