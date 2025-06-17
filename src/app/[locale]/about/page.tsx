@@ -44,7 +44,41 @@ export default function AboutPage({ params }: { params: Promise<{ locale: 'en' |
             </table>
           </div>
         </div>
+        {/* Bare Skills Bar Diagram */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start mt-12">
+          <div>
+            <h2 className="text-4xl font-serif mb-8">{t('bareSkillsHeader')}</h2>
+          </div>
+          <div className="w-full flex flex-col gap-8">
+            {about.bareSkills.map((skill, idx) => (
+              <SkillBar key={idx} name={skill.name[locale]} percent={skill.percent} />
+            ))}
+          </div>
+        </div>
       </div>
     </main>
+  );
+}
+
+// Animated SkillBar component
+function SkillBar({ name, percent }: { name: string; percent: number }) {
+  const [width, setWidth] = React.useState(0);
+  React.useEffect(() => {
+    const timeout = setTimeout(() => setWidth(percent), 200);
+    return () => clearTimeout(timeout);
+  }, [percent]);
+  return (
+    <div>
+      <div className="flex justify-between items-center mb-1">
+        <span className="font-bold">{name}</span>
+        <span className="font-bold italic">{percent}%</span>
+      </div>
+      <div className="w-full h-1.5 bg-muted-foreground/30">
+        <div
+          className="h-1.5 bg-white transition-all duration-1000"
+          style={{ width: `${width}%` }}
+        />
+      </div>
+    </div>
   );
 } 

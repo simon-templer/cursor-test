@@ -88,7 +88,72 @@ export const content = {
         year: 2019
       }
     ],
-    image: "/images/about-image.png"
+    image: "/images/about-image.png",
+    bareSkills: [
+      {
+        name: {
+          en: "Java",
+          de: "Java",
+          fr: "Java",
+          it: "Java"
+        },
+        percent: 90
+      },
+      {
+        name: {
+          en: "Spring Boot",
+          de: "Spring Boot",
+          fr: "Spring Boot",
+          it: "Spring Boot"
+        },
+        percent: 85
+      },
+      {
+        name: {
+          en: "JavaScript",
+          de: "JavaScript",
+          fr: "JavaScript",
+          it: "JavaScript"
+        },
+        percent: 80
+      },
+      {
+        name: {
+          en: "React",
+          de: "React",
+          fr: "React",
+          it: "React"
+        },
+        percent: 75
+      },
+      {
+        name: {
+          en: "SQL",
+          de: "SQL",
+          fr: "SQL",
+          it: "SQL"
+        },
+        percent: 80
+      },
+      {
+        name: {
+          en: "REST APIs",
+          de: "REST APIs",
+          fr: "REST APIs",
+          it: "REST APIs"
+        },
+        percent: 85
+      },
+      {
+        name: {
+          en: "HTML & CSS",
+          de: "HTML & CSS",
+          fr: "HTML & CSS",
+          it: "HTML & CSS"
+        },
+        percent: 75
+      }
+    ]
   },
   skills: {
     title: {
