@@ -3,6 +3,30 @@ import { content } from '@/config/content';
 import { useTranslations } from 'next-intl';
 import React from 'react';
 
+// Types for Skills & Tools
+interface SkillsAndToolsItem {
+  name: string;
+  icon: string;
+}
+
+interface SkillsAndToolsCategory {
+  key: string;
+  label: Record<string, string>;
+  items: SkillsAndToolsItem[];
+}
+
+interface AboutContent {
+  skillsAndTools: {
+    categories: SkillsAndToolsCategory[];
+  };
+}
+
+interface SkillsAndToolsSectionProps {
+  about: AboutContent;
+  t: (key: string, params?: Record<string, string>) => string;
+  locale: string;
+}
+
 export default function AboutPage({ params }: { params: Promise<{ locale: 'en' | 'de' | 'fr' | 'it' }> }) {
   const { locale } = React.use(params);
   const t = useTranslations('about');
@@ -105,7 +129,7 @@ function SkillBar({ name, percent }: { name: string; percent: number }) {
 }
 
 // Skills & Tools Section with animated toggle
-function SkillsAndToolsSection({ about, t, locale }: any) {
+function SkillsAndToolsSection({ about, t, locale }: SkillsAndToolsSectionProps) {
   const categories = about.skillsAndTools.categories;
   const [activeIdx, setActiveIdx] = React.useState(0);
   const [show, setShow] = React.useState(true);
@@ -129,7 +153,7 @@ function SkillsAndToolsSection({ about, t, locale }: any) {
       </div>
       <div className="w-full flex flex-col items-center">
         <div className="flex gap-4 mb-6">
-          {categories.map((cat: any, idx: number) => (
+          {categories.map((cat, idx) => (
             <button
               key={cat.key}
               className={`px-4 py-2 rounded-full border font-semibold transition-all duration-200 ${idx === activeIdx ? 'bg-primary text-background' : 'bg-background text-foreground border-muted'}`}
@@ -145,7 +169,7 @@ function SkillsAndToolsSection({ about, t, locale }: any) {
             className={`absolute w-full transition-all duration-300 ${show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'} flex flex-wrap justify-center gap-6`}
             key={active.key}
           >
-            {active.items.map((item: any, idx: number) => (
+            {active.items.map((item, idx) => (
               <div key={idx} className="flex flex-col items-center text-center">
                 <span className="text-3xl mb-1">{item.icon}</span>
                 <span className="text-base font-medium text-muted-foreground">{item.name}</span>
