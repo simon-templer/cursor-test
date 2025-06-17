@@ -31,6 +31,11 @@
     "messagePlaceholder": "Nachricht",
     "success": "Ihre Nachricht wurde gesendet!",
     "error": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten.",
-    "autoresponse": "Vielen Dank für Ihre Kontaktaufnahme! Wir haben Ihre Anfrage erhalten und melden uns in Kürze."
+    "autoresponse": "Vielen Dank für Ihre Kontaktaufnahme! Wir haben Ihre Anfrage erhalten und melden uns in Kürze.",
+    "validation": {
+      "nameMin": "Der Name muss mindestens 5 Zeichen lang sein",
+      "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      "messageMin": "Die Nachricht muss mindestens 20 Zeichen lang sein"
+    }
   }
 } 

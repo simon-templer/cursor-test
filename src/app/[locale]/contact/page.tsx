@@ -5,19 +5,43 @@ import { Button } from '@/components/ui/button';
 import { Toaster } from '@/components/ui/sonner';
 import { toast } from 'sonner';
 import React, { useRef, useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import * as z from 'zod';
+import { cn } from '@/lib/utils';
 
 export default function ContactPage({ params }: { params: Promise<{ locale: 'en' | 'de' | 'fr' | 'it' }> }) {
   const { locale } = React.use(params);
   const t = useTranslations('contact');
   const contact = content.contactForm;
-  const formRef = useRef<HTMLFormElement>(null);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const formSchema = z.object({
+    name: z.string().min(5, t('validation.nameMin')),
+    email: z.string().email(t('validation.emailInvalid')),
+    message: z.string().min(20, t('validation.messageMin')),
+  });
+
+  type FormData = z.infer<typeof formSchema>;
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isValid },
+    reset,
+  } = useForm<FormData>({
+    resolver: zodResolver(formSchema),
+    mode: 'onChange',
+  });
+
+  const onSubmit = async (data: FormData) => {
     setLoading(true);
-    const form = e.currentTarget;
-    const formData = new FormData(form);
+    const formData = new FormData();
+    Object.entries(data).forEach(([key, value]) => {
+      formData.append(key, String(value));
+    });
+    formData.append('access_key', process.env.NEXT_PUBLIC_WEB3FORMS_API_KEY || '');
+
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
@@ -25,7 +49,7 @@ export default function ContactPage({ params }: { params: Promise<{ locale: 'en'
       });
       if (response.ok) {
         toast.success(t('success'));
-        form.reset();
+        reset();
       } else {
         toast.error(t('error'));
       }
@@ -50,35 +74,61 @@ export default function ContactPage({ params }: { params: Promise<{ locale: 'en'
           <p className="mb-4 text-base text-muted-foreground">{contact.description[locale]}</p>
         </div>
         {/* Right: Contact Form */}
-        <form ref={formRef} className="flex-1 flex flex-col gap-4" aria-label="Contact form" onSubmit={handleSubmit}>
-          <input type="hidden" name="access_key" value={process.env.NEXT_PUBLIC_WEB3FORMS_API_KEY} />
+        <form className="flex-1 flex flex-col gap-4" aria-label="Contact form" onSubmit={handleSubmit(onSubmit)}>
           <div className="flex gap-4">
-            <input
-              type="text"
-              name="name"
-              placeholder={t('namePlaceholder')}
-              className="flex-1 p-3 bg-background border border-muted rounded text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-              required
-              aria-label={t('namePlaceholder')}
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder={t('emailPlaceholder')}
-              className="flex-1 p-3 bg-background border border-muted rounded text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-              required
-              aria-label={t('emailPlaceholder')}
-            />
+            <div className="flex-1">
+              <input
+                {...register('name')}
+                type="text"
+                placeholder={t('namePlaceholder')}
+                className={cn(
+                  "w-full p-3 bg-background border rounded text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 transition-all duration-200",
+                  errors.name ? "border-destructive focus:ring-destructive" : "border-muted focus:ring-primary"
+                )}
+                aria-label={t('namePlaceholder')}
+              />
+              {errors.name && (
+                <p className="mt-1 text-sm text-destructive">{errors.name.message}</p>
+              )}
+            </div>
+            <div className="flex-1">
+              <input
+                {...register('email')}
+                type="email"
+                placeholder={t('emailPlaceholder')}
+                className={cn(
+                  "w-full p-3 bg-background border rounded text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 transition-all duration-200",
+                  errors.email ? "border-destructive focus:ring-destructive" : "border-muted focus:ring-primary"
+                )}
+                aria-label={t('emailPlaceholder')}
+              />
+              {errors.email && (
+                <p className="mt-1 text-sm text-destructive">{errors.email.message}</p>
+              )}
+            </div>
           </div>
-          <textarea
-            name="message"
-            placeholder={t('messagePlaceholder')}
-            className="p-3 h-40 bg-background border border-muted rounded text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-            required
-            aria-label={t('messagePlaceholder')}
-          />
           <div>
-            <Button type="submit" className="px-8 py-2" disabled={loading}>{loading ? '...' : t('send')}</Button>
+            <textarea
+              {...register('message')}
+              placeholder={t('messagePlaceholder')}
+              className={cn(
+                "w-full p-3 h-40 bg-background border rounded text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 transition-all duration-200",
+                errors.message ? "border-destructive focus:ring-destructive" : "border-muted focus:ring-primary"
+              )}
+              aria-label={t('messagePlaceholder')}
+            />
+            {errors.message && (
+              <p className="mt-1 text-sm text-destructive">{errors.message.message}</p>
+            )}
+          </div>
+          <div>
+            <Button 
+              type="submit" 
+              className="px-8 py-2 transition-all duration-200 hover:scale-105" 
+              disabled={loading || !isValid}
+            >
+              {loading ? '...' : t('send')}
+            </Button>
           </div>
         </form>
       </div>

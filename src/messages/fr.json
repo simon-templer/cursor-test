@@ -31,6 +31,11 @@
     "messagePlaceholder": "Message",
     "success": "Votre message a été envoyé !",
     "error": "Une erreur s'est produite lors de l'envoi de votre message.",
-    "autoresponse": "Merci de nous avoir contactés ! Nous avons bien reçu votre demande et nous vous répondrons bientôt."
+    "autoresponse": "Merci de nous avoir contactés ! Nous avons bien reçu votre demande et nous vous répondrons bientôt.",
+    "validation": {
+      "nameMin": "Le nom doit contenir au moins 5 caractères",
+      "emailInvalid": "Veuillez entrer une adresse e-mail valide",
+      "messageMin": "Le message doit contenir au moins 20 caractères"
+    }
   }
 } 
