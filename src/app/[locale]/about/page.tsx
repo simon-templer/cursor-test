@@ -32,16 +32,6 @@ export default function AboutPage({ params }: { params: Promise<{ locale: 'en' |
   const t = useTranslations('about');
   const about = content.about;
 
-  const [animatedCount, setAnimatedCount] = React.useState(0);
-
-  React.useEffect(() => {
-    setAnimatedCount(0);
-  }, [about.bareSkills]);
-
-  const handleBarVisible = () => {
-    setAnimatedCount((count) => count + 1);
-  };
-
   return (
     <main className="min-h-screen flex flex-col items-center bg-background text-foreground transition-colors">
       <div className="w-full max-w-6xl mx-auto flex flex-col gap-24 p-8">
@@ -138,11 +128,12 @@ function SkillBar({ name, percent }: { name: string; percent: number }) {
       },
       { threshold: 0.3 }
     );
-    if (ref.current) {
-      observer.observe(ref.current);
+    const node = ref.current;
+    if (node) {
+      observer.observe(node);
     }
     return () => {
-      if (ref.current) observer.unobserve(ref.current);
+      if (node) observer.unobserve(node);
     };
   }, []);
 
