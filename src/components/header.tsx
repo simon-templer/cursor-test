@@ -26,35 +26,30 @@ const navigation = [
 
 export function Header() {
   const { theme, resolvedTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
   const t = useTranslations('navigation');
   
-  useEffect(() => { setMounted(true); }, []);
   return (
     <header className="sticky top-0 left-0 w-full z-50 bg-background bg-opacity-90 backdrop-blur">
       <div className="flex h-16 items-center w-full">
         <IntlLink href="/" className="flex items-center pl-4 sm:pl-8 lg:pl-12">
-          {mounted ? (
-            (theme === "dark" || (theme === "system" && resolvedTheme === "dark")) ? (
-              <Image
-                src="/images/konoto_logo_black_transparent.png"
-                alt="KONOTO Logo Black"
-                width={140}
-                height={40}
-                className="object-contain h-10 w-auto"
-                priority
-              />
-            ) : (
-              <Image
-                src="/images/konoto_logo_green_transparent.png.png"
-                alt="KONOTO Logo Green"
-                width={140}
-                height={40}
-                className="object-contain h-10 w-auto"
-                priority
-              />
-            )
-          ) : null}
+          <div className="relative h-10 w-[140px] sm:h-12 sm:w-[168px] lg:h-14 lg:w-[196px]">
+            <Image
+              src="/images/konoto_logo_green_transparent.png.png"
+              alt="KONOTO Logo Green"
+              width={196}
+              height={56}
+              className="object-contain h-10 w-auto sm:h-12 lg:h-14 absolute inset-0 transition-opacity duration-200 dark:opacity-0"
+              priority
+            />
+            <Image
+              src="/images/konoto_logo_black_transparent.png"
+              alt="KONOTO Logo Black"
+              width={196}
+              height={56}
+              className="object-contain h-10 w-auto sm:h-12 lg:h-14 absolute inset-0 transition-opacity duration-200 opacity-0 dark:opacity-100"
+              priority
+            />
+          </div>
         </IntlLink>
         {/* Desktop Menu Button */}
         <div className="hidden md:flex items-center gap-2 ml-auto">
