@@ -43,6 +43,8 @@
     "subheader": "Ein bisschen über mich",
     "workTimelineHeader": "Beruflicher Werdegang",
     "bareSkillsHeader": "Skills",
-    "capabilitiesHeader": "Fähigkeiten"
+    "capabilitiesHeader": "Fähigkeiten",
+    "skillsAndToolsHeader": "Skills & Tools",
+    "skillsAndToolsToggle": "Anzeigen: {category}"
   }
 } 

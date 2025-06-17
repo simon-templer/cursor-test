@@ -272,7 +272,51 @@ export const content = {
           ]
         }
       }
-    ]
+    ],
+    skillsAndTools: {
+      categories: [
+        {
+          key: 'tech',
+          label: {
+            en: 'Tech',
+            de: 'Technologien',
+            fr: 'Technologies',
+            it: 'Tecnologie'
+          },
+          items: [
+            { name: 'Java', icon: '☕' },
+            { name: 'Spring Boot', icon: '🌱' },
+            { name: 'React', icon: '⚛️' },
+            { name: 'JavaScript', icon: '🟨' },
+            { name: 'TypeScript', icon: '🔷' },
+            { name: 'SQL', icon: '🗄️' },
+            { name: 'HTML5', icon: '📄' },
+            { name: 'CSS3', icon: '🎨' },
+            { name: 'Docker', icon: '🐳' },
+            { name: 'Kubernetes', icon: '☸️' }
+          ]
+        },
+        {
+          key: 'tools',
+          label: {
+            en: 'Tools',
+            de: 'Werkzeuge',
+            fr: 'Outils',
+            it: 'Strumenti'
+          },
+          items: [
+            { name: 'IntelliJ IDEA', icon: '💡' },
+            { name: 'VS Code', icon: '📝' },
+            { name: 'Git', icon: '🔧' },
+            { name: 'Maven', icon: '📦' },
+            { name: 'Jenkins', icon: '🤖' },
+            { name: 'Postman', icon: '📬' },
+            { name: 'Figma', icon: '🎨' },
+            { name: 'Jira', icon: '📋' }
+          ]
+        }
+      ]
+    }
   },
   skills: {
     title: {

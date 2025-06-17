@@ -43,6 +43,8 @@
     "subheader": "Un po' su di me",
     "workTimelineHeader": "Percorso lavorativo",
     "bareSkillsHeader": "Skills",
-    "capabilitiesHeader": "Competenze"
+    "capabilitiesHeader": "Competenze",
+    "skillsAndToolsHeader": "Competenze & Strumenti",
+    "skillsAndToolsToggle": "Mostra: {category}"
   }
 } 
