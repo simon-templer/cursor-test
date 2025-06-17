@@ -1,7 +1,7 @@
 "use client";
 import { content } from '@/config/content';
 import { useTranslations } from 'next-intl';
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 
 // Types for Skills & Tools
 interface SkillsAndToolsItem {
@@ -31,6 +31,16 @@ export default function AboutPage({ params }: { params: Promise<{ locale: 'en' |
   const { locale } = React.use(params);
   const t = useTranslations('about');
   const about = content.about;
+
+  const [animatedCount, setAnimatedCount] = React.useState(0);
+
+  React.useEffect(() => {
+    setAnimatedCount(0);
+  }, [about.bareSkills]);
+
+  const handleBarVisible = () => {
+    setAnimatedCount((count) => count + 1);
+  };
 
   return (
     <main className="min-h-screen flex flex-col items-center bg-background text-foreground transition-colors">
@@ -75,7 +85,11 @@ export default function AboutPage({ params }: { params: Promise<{ locale: 'en' |
           </div>
           <div className="w-full flex flex-col gap-8">
             {about.bareSkills.map((skill, idx) => (
-              <SkillBar key={idx} name={skill.name[locale]} percent={skill.percent} />
+              <SkillBar
+                key={idx}
+                name={skill.name[locale]}
+                percent={skill.percent}
+              />
             ))}
           </div>
         </div>
@@ -107,20 +121,46 @@ export default function AboutPage({ params }: { params: Promise<{ locale: 'en' |
 
 // Animated SkillBar component
 function SkillBar({ name, percent }: { name: string; percent: number }) {
-  const [width, setWidth] = React.useState(0);
-  React.useEffect(() => {
-    const timeout = setTimeout(() => setWidth(percent), 200);
-    return () => clearTimeout(timeout);
-  }, [percent]);
+  const [width, setWidth] = useState(0);
+  const [visible, setVisible] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  const hasAnimated = useRef(false);
+
+  useEffect(() => {
+    const observer = new window.IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasAnimated.current) {
+            setVisible(true);
+            hasAnimated.current = true;
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+    return () => {
+      if (ref.current) observer.unobserve(ref.current);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (visible) {
+      setTimeout(() => setWidth(percent), 200);
+    }
+  }, [visible, percent]);
+
   return (
-    <div>
+    <div ref={ref}>
       <div className="flex justify-between items-center mb-1">
         <span className="font-bold">{name}</span>
         <span className="font-bold italic">{percent}%</span>
       </div>
-      <div className="w-full h-1.5 bg-muted-foreground/30">
+      <div className="w-full h-1.5 bg-muted">
         <div
-          className="h-1.5 bg-white transition-all duration-1000"
+          className="h-1.5 bg-primary transition-all duration-1000"
           style={{ width: `${width}%` }}
         />
       </div>
