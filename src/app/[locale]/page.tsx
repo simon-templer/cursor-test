@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { content } from "@/config/content";
-import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { getTranslations } from 'next-intl/server';
 import { routing } from "@/i18n/routing";
+import { HeroImage } from "@/components/hero-image";
 
 type Locale = typeof routing.locales[number];
 
@@ -44,13 +44,7 @@ export default async function HomePage({
             </div>
           </div>
           <div className="relative w-full h-full">
-            <Image
-              src={content.hero.image}
-              alt={t('home.heroImageAlt')}
-              fill
-              className="object-cover"
-              priority
-            />
+            <HeroImage src={content.hero.image} alt={t('home.heroImageAlt')} />
           </div>
         </div>
       </section>
