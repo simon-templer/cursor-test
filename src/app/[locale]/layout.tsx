@@ -5,6 +5,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/header";
+import { SocialBar } from "@/components/SocialBar";
 import "../globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -34,6 +35,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={inter.className}>
+        <SocialBar />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -42,7 +44,9 @@ export default async function LocaleLayout({
         >
           <NextIntlClientProvider>
             <Header />
-            {children}
+            <div className="sm:ml-16">
+              {children}
+            </div>
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>

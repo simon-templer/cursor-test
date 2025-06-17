@@ -539,5 +539,21 @@ export const content = {
       fr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar nisi at imperdiet pharetra.",
       it: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar nisi at imperdiet pharetra."
     }
-  }
+  },
+  socials: [
+    {
+      icon: 'github',
+      label: {
+        en: 'GitHub', de: 'GitHub', fr: 'GitHub', it: 'GitHub'
+      },
+      url: 'https://github.com/'
+    },
+    {
+      icon: 'linkedin',
+      label: {
+        en: 'LinkedIn', de: 'LinkedIn', fr: 'LinkedIn', it: 'LinkedIn'
+      },
+      url: 'https://linkedin.com/'
+    }
+  ]
 } 
