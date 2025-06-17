@@ -78,11 +78,7 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="p-0 w-full max-w-md h-full flex flex-col bg-background">
               <SheetTitle className="sr-only">Main Menu</SheetTitle>
-              <div className="flex items-center justify-between px-6 pt-6 pb-2">
-                <Link href="/" className="flex items-center">
-                  <span className="font-bold text-lg">JOHN</span>
-                </Link>
-              </div>
+              
               <nav className="flex-1 flex flex-col items-start justify-center px-8 gap-8">
                 {navigation.map((item) => (
                   <SheetClose key={item.href} asChild>
@@ -95,16 +91,6 @@ export function Header() {
                   </SheetClose>
                 ))}
               </nav>
-              <div className="flex justify-between items-end w-full px-6 pb-4 text-sm">
-                <div className="flex gap-4">
-                  {socials.map((social) => (
-                    <Link key={social.name} href={social.href} className={social.color + " hover:underline"}>
-                      {social.name}
-                    </Link>
-                  ))}
-                </div>
-                <span className="text-xs text-muted-foreground">copyright __ JOHN</span>
-              </div>
             </SheetContent>
           </Sheet>
         </div>
@@ -141,16 +127,6 @@ export function Header() {
                   </SheetClose>
                 ))}
               </nav>
-              <div className="flex justify-between items-end w-full px-6 pb-4 text-sm">
-                <div className="flex gap-4">
-                  {socials.map((social) => (
-                    <Link key={social.name} href={social.href} className={social.color + " hover:underline"}>
-                      {social.name}
-                    </Link>
-                  ))}
-                </div>
-                <span className="text-xs text-muted-foreground">copyright __ JOHN</span>
-              </div>
             </SheetContent>
           </Sheet>
         </div>
