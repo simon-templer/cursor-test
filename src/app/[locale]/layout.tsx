@@ -30,6 +30,9 @@ export default async function LocaleLayout({
     notFound();
   }
 
+  // Load messages for the current locale
+  const messages = (await import(`../../messages/${locale}.json`)).default;
+
   return (
     <html lang={locale} suppressHydrationWarning className={exo2.variable}>
       <body className={`${exo2.className} font-sans min-h-screen`}>
@@ -39,7 +42,7 @@ export default async function LocaleLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <NextIntlClientProvider>
+          <NextIntlClientProvider locale={locale} messages={messages}>
             <Header />
             <div className="sm:ml-16 min-h-[calc(100vh-4rem)]">
               {children}
