@@ -1,6 +1,6 @@
 "use client";
 
-import { usePathname, useRouter } from "@/i18n/navigation";
+import { usePathname } from "@/i18n/navigation";
 import { Button } from "./ui/button";
 import {
   DropdownMenu,
@@ -21,7 +21,6 @@ const languages = [
 
 export function LanguageToggle() {
   const t = useTranslations();
-  const router = useRouter();
   const pathname = usePathname();
 
   const handleLanguageChange = useCallback(async (locale: string) => {
