@@ -10,6 +10,7 @@ import {
 } from "./ui/dropdown-menu";
 import { useTranslations } from "next-intl";
 import { Globe } from "lucide-react";
+import { useCallback } from "react";
 
 const languages = [
   { code: "en", name: "English" },
@@ -23,9 +24,14 @@ export function LanguageToggle() {
   const router = useRouter();
   const pathname = usePathname();
 
-  const handleLanguageChange = (locale: string) => {
-    router.push(pathname, { locale });
-  };
+  const handleLanguageChange = useCallback(async (locale: string) => {
+    try {
+      // Force a hard navigation to ensure proper locale change
+      window.location.href = `/${locale}${pathname}`;
+    } catch (error) {
+      console.error('Failed to change language:', error);
+    }
+  }, [pathname]);
 
   return (
     <DropdownMenu modal={false}>

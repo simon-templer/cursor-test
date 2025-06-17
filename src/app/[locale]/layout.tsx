@@ -42,7 +42,7 @@ export default async function LocaleLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <NextIntlClientProvider locale={locale} messages={messages}>
+          <NextIntlClientProvider locale={locale} messages={messages} timeZone="UTC">
             <Header />
             <div className="sm:ml-16 min-h-[calc(100vh-4rem)]">
               {children}
