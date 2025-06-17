@@ -37,7 +37,7 @@ export function Header() {
   
   useEffect(() => { setMounted(true); }, []);
   return (
-    <header className="absolute top-0 left-0 w-full z-50 bg-transparent">
+    <header className="sticky top-0 left-0 w-full z-50 bg-background bg-opacity-90 backdrop-blur">
       <div className="flex h-16 items-center w-full">
         <IntlLink href="/" className="flex items-center pl-4 sm:pl-8 lg:pl-12">
           {mounted ? (
