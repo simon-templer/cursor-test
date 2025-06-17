@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/header";
 import { SocialBar } from "@/components/SocialBar";
+import { exo2 } from "../fonts";
 import "../globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -33,8 +31,8 @@ export default async function LocaleLayout({
   }
 
   return (
-    <html lang={locale} suppressHydrationWarning>
-      <body className={inter.className}>
+    <html lang={locale} suppressHydrationWarning className={exo2.variable}>
+      <body className={`${exo2.className} font-sans`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
