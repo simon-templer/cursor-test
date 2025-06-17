@@ -12,8 +12,6 @@ import {
   SheetClose,
 } from "./ui/sheet"
 import Image from "next/image"
-import { useTheme } from "next-themes"
-import { useState, useEffect } from "react"
 import { useTranslations } from "next-intl"
 import { Link as IntlLink } from "@/i18n/navigation"
 
@@ -25,7 +23,6 @@ const navigation = [
 ]
 
 export function Header() {
-  const { theme, resolvedTheme } = useTheme();
   const t = useTranslations('navigation');
   
   return (
