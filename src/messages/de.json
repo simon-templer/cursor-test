@@ -37,5 +37,10 @@
       "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
       "messageMin": "Die Nachricht muss mindestens 20 Zeichen lang sein"
     }
+  },
+  "about": {
+    "header": "Über Mich",
+    "subheader": "Ein bisschen über mich",
+    "workTimelineHeader": "Beruflicher Werdegang"
   }
 } 

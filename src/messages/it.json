@@ -37,5 +37,10 @@
       "emailInvalid": "Inserisci un indirizzo email valido",
       "messageMin": "Il messaggio deve contenere almeno 20 caratteri"
     }
+  },
+  "about": {
+    "header": "Chi Sono",
+    "subheader": "Un po' su di me",
+    "workTimelineHeader": "Percorso lavorativo"
   }
 } 

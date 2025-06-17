@@ -37,5 +37,10 @@
       "emailInvalid": "Please enter a valid email address",
       "messageMin": "Message must be at least 20 characters"
     }
+  },
+  "about": {
+    "header": "About Me",
+    "subheader": "abit about my self",
+    "workTimelineHeader": "Work Timeline"
   }
 } 

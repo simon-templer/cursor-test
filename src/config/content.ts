@@ -35,6 +35,59 @@ export const content = {
       fr: "Je suis un développeur Full Stack passionné avec une solide base en technologies web. J'adore créer des applications belles et fonctionnelles qui résolvent des problèmes réels.",
       it: "Sono uno sviluppatore Full Stack appassionato con una solida base nelle tecnologie web. Amo creare applicazioni belle e funzionali che risolvono problemi reali."
     },
+    aboutText: {
+      en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+      de: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+      fr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+      it: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies."
+    },
+    workTimeline: [
+      {
+        role: {
+          en: "Designer of week",
+          de: "Designer der Woche",
+          fr: "Designer de la semaine",
+          it: "Designer della settimana"
+        },
+        company: {
+          en: "YAdfi",
+          de: "YAdfi",
+          fr: "YAdfi",
+          it: "YAdfi"
+        },
+        year: 2020
+      },
+      {
+        role: {
+          en: "Designer of week",
+          de: "Designer der Woche",
+          fr: "Designer de la semaine",
+          it: "Designer della settimana"
+        },
+        company: {
+          en: "Jamalya",
+          de: "Jamalya",
+          fr: "Jamalya",
+          it: "Jamalya"
+        },
+        year: 2019
+      },
+      {
+        role: {
+          en: "Designer of week",
+          de: "Designer der Woche",
+          fr: "Designer de la semaine",
+          it: "Designer della settimana"
+        },
+        company: {
+          en: "ALquds",
+          de: "ALquds",
+          fr: "ALquds",
+          it: "ALquds"
+        },
+        year: 2019
+      }
+    ],
     image: "/images/about-image.png"
   },
   skills: {
