@@ -124,13 +124,3 @@
     width: 100%;
   }
 }
-
-.button-ghost-menu:hover {
-  background-color: var(--accent-hover) !important;
-  color: var(--accent-foreground-hover) !important;
-}
-
-.dark .button-ghost-menu:hover {
-  background-color: inherit !important;
-  color: inherit !important;
-}

@@ -70,7 +70,7 @@ export function Header() {
             <SheetTrigger asChild>
               <Button
                 variant="ghost"
-                className="button-ghost-menu px-0 text-base focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0"
+                className="px-0 text-base hover:bg-accent/10 dark:hover:bg-accent/20 transition-colors focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0"
               >
                 <Menu className="h-9 w-9 text-[#009688] dark:text-white" />
                 <span className="sr-only">Open Menu</span>
@@ -102,7 +102,7 @@ export function Header() {
             <SheetTrigger asChild>
               <Button
                 variant="ghost"
-                className="button-ghost-menu ml-auto px-0 text-base focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0"
+                className="ml-auto px-0 text-base hover:bg-accent/10 dark:hover:bg-accent/20 transition-colors focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0"
               >
                 <Menu className="h-9 w-9 text-[#009688] dark:text-white" />
                 <span className="sr-only">Toggle Menu</span>
