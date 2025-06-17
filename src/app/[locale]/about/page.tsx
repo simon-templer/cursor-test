@@ -34,11 +34,11 @@ export default function AboutPage({ params }: { params: Promise<{ locale: 'en' |
 
   return (
     <main className="min-h-screen flex flex-col items-center bg-background text-foreground transition-colors">
-      <div className="w-full max-w-6xl mx-auto flex flex-col gap-24 p-8">
+      <div className="w-full max-w-6xl mx-auto flex flex-col gap-24 px-4 py-12">
         {/* Header */}
-        <div className="pt-8">
-          <h1 className="text-5xl font-serif mb-2">{about.title[locale]}</h1>
-          <hr className="border-t border-muted mb-8" />
+        <div>
+          <h1 className="text-5xl font-serif font-normal mb-2 text-left pt-12">{about.title[locale]}</h1>
+          <hr className="border-t border-gray-300 dark:border-gray-500 w-1/2 mb-8 ml-0" />
         </div>
         {/* About Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
