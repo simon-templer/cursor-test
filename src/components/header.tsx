@@ -24,12 +24,6 @@ const navigation = [
   { name: "contact", href: "/contact" },
 ]
 
-const socials = [
-  { name: "Facebook", href: "#", color: "text-blue-400" },
-  { name: "Github", href: "#", color: "text-white" },
-  { name: "Twitter", href: "#", color: "text-blue-300" },
-]
-
 export function Header() {
   const { theme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
