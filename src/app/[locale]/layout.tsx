@@ -35,7 +35,6 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={inter.className}>
-        <SocialBar />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -47,6 +46,7 @@ export default async function LocaleLayout({
             <div className="sm:ml-16">
               {children}
             </div>
+            <SocialBar />
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
