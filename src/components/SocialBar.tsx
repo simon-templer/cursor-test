@@ -37,7 +37,7 @@ export function SocialBar() {
       </div>
       {/* Horizontal bar for mobile */}
       <div className="flex sm:hidden w-full flex-row items-center justify-center gap-2 px-4 py-8 bg-background/90 backdrop-blur mt-8">
-        <span className="font-bold text-base text-foreground mr-2">Follow Me</span>
+        <span className="text-xs text-muted-foreground mr-2">Follow Me</span>
         <span className="inline-block w-8 h-0.5 bg-muted mr-2 align-middle" />
         {content.socials.map((social, idx) => (
           <Button
