@@ -32,7 +32,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning className={exo2.variable}>
-      <body className={`${exo2.className} font-sans`}>
+      <body className={`${exo2.className} font-sans min-h-screen`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -41,7 +41,7 @@ export default async function LocaleLayout({
         >
           <NextIntlClientProvider>
             <Header />
-            <div className="sm:ml-16">
+            <div className="sm:ml-16 min-h-[calc(100vh-4rem)]">
               {children}
             </div>
             <SocialBar />

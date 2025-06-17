@@ -61,7 +61,7 @@ export default function ContactPage({ params }: { params: Promise<{ locale: 'en'
   };
 
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center bg-background text-foreground transition-colors">
+    <main className="flex flex-col items-center justify-center bg-background text-foreground transition-colors min-h-[calc(100vh-4rem)]">
       <Toaster />
       <div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row gap-12 p-8">
         {/* Left: Contact Info */}
@@ -74,7 +74,7 @@ export default function ContactPage({ params }: { params: Promise<{ locale: 'en'
           <p className="mb-4 text-base text-muted-foreground">{contact.description[locale]}</p>
         </div>
         {/* Right: Contact Form */}
-        <form className="flex-1 flex flex-col gap-4" aria-label="Contact form" onSubmit={handleSubmit(onSubmit)}>
+        <form className="flex-1 flex flex-col gap-4 justify-center" aria-label="Contact form" onSubmit={handleSubmit(onSubmit)}>
           <div className="flex gap-4">
             <div className="flex-1">
               <input

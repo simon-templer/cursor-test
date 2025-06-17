@@ -16,9 +16,9 @@ export default async function HomePage({
   const t = await getTranslations(); 
   
   return (
-    <main className="flex min-h-screen flex-col">
+    <main className="h-[calc(100vh-4rem)]">
       {/* Hero Section */}
-      <section className="h-screen w-full">
+      <section className="h-full w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 h-full w-full items-center">
           <div className="flex flex-col justify-center items-start h-full w-full pl-12">
             <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
