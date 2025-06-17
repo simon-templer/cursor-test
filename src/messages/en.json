@@ -42,6 +42,7 @@
     "header": "About Me",
     "subheader": "abit about my self",
     "workTimelineHeader": "Work Timeline",
-    "bareSkillsHeader": "Skills"
+    "bareSkillsHeader": "Skills",
+    "capabilitiesHeader": "Capabilities"
   }
 } 

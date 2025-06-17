@@ -153,6 +153,125 @@ export const content = {
         },
         percent: 75
       }
+    ],
+    capabilities: [
+      {
+        icon: "🖥️",
+        title: {
+          en: "Backend Development",
+          de: "Backend-Entwicklung",
+          fr: "Développement Backend",
+          it: "Sviluppo Backend"
+        },
+        items: {
+          en: [
+            "Java (Spring Boot, JPA, Hibernate)",
+            "RESTful API Design",
+            "Microservices Architecture",
+            "Unit & Integration Testing",
+            "Security & Authentication"
+          ],
+          de: [
+            "Java (Spring Boot, JPA, Hibernate)",
+            "RESTful API Design",
+            "Microservices Architektur",
+            "Unit- & Integrationstests",
+            "Sicherheit & Authentifizierung"
+          ],
+          fr: [
+            "Java (Spring Boot, JPA, Hibernate)",
+            "Conception d'API RESTful",
+            "Architecture microservices",
+            "Tests unitaires & d'intégration",
+            "Sécurité & authentification"
+          ],
+          it: [
+            "Java (Spring Boot, JPA, Hibernate)",
+            "Progettazione API RESTful",
+            "Architettura a microservizi",
+            "Test unitari e di integrazione",
+            "Sicurezza e autenticazione"
+          ]
+        }
+      },
+      {
+        icon: "🌐",
+        title: {
+          en: "Frontend Development",
+          de: "Frontend-Entwicklung",
+          fr: "Développement Frontend",
+          it: "Sviluppo Frontend"
+        },
+        items: {
+          en: [
+            "JavaScript (ES6+)",
+            "React.js",
+            "HTML5 & CSS3",
+            "Responsive Web Design",
+            "State Management (Redux)"
+          ],
+          de: [
+            "JavaScript (ES6+)",
+            "React.js",
+            "HTML5 & CSS3",
+            "Responsives Webdesign",
+            "State Management (Redux)"
+          ],
+          fr: [
+            "JavaScript (ES6+)",
+            "React.js",
+            "HTML5 & CSS3",
+            "Design web adaptatif",
+            "Gestion d'état (Redux)"
+          ],
+          it: [
+            "JavaScript (ES6+)",
+            "React.js",
+            "HTML5 & CSS3",
+            "Web design responsivo",
+            "Gestione stato (Redux)"
+          ]
+        }
+      },
+      {
+        icon: "☁️",
+        title: {
+          en: "DevOps & Cloud",
+          de: "DevOps & Cloud",
+          fr: "DevOps & Cloud",
+          it: "DevOps & Cloud"
+        },
+        items: {
+          en: [
+            "Docker & Kubernetes",
+            "CI/CD Pipelines",
+            "AWS & Azure",
+            "Monitoring & Logging",
+            "Agile & Scrum"
+          ],
+          de: [
+            "Docker & Kubernetes",
+            "CI/CD-Pipelines",
+            "AWS & Azure",
+            "Monitoring & Logging",
+            "Agile & Scrum"
+          ],
+          fr: [
+            "Docker & Kubernetes",
+            "Pipelines CI/CD",
+            "AWS & Azure",
+            "Surveillance & journalisation",
+            "Agile & Scrum"
+          ],
+          it: [
+            "Docker & Kubernetes",
+            "Pipeline CI/CD",
+            "AWS & Azure",
+            "Monitoraggio & Logging",
+            "Agile & Scrum"
+          ]
+        }
+      }
     ]
   },
   skills: {

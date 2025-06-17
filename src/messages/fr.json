@@ -42,6 +42,7 @@
     "header": "À Propos",
     "subheader": "Un peu sur moi",
     "workTimelineHeader": "Parcours professionnel",
-    "bareSkillsHeader": "Skills"
+    "bareSkillsHeader": "Skills",
+    "capabilitiesHeader": "Compétences"
   }
 } 
