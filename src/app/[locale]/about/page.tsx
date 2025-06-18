@@ -13,30 +13,38 @@ export default function AboutPage({ params }: { params: Promise<{ locale: 'en' |
   const about = content.about;
 
   return (
-    <main className="min-h-screen flex flex-col items-center bg-background text-foreground transition-colors">
-      <div className="w-full max-w-6xl mx-auto flex flex-col gap-24 px-4 py-12">
-        {/* Header */}
-        <div>
-          <h1 className="text-5xl font-serif font-normal mb-2 text-left pt-12">{about.title[locale]}</h1>
-          <hr className="border-t border-gray-300 dark:border-gray-500 w-1/2 mb-8 ml-0" />
-        </div>
-        {/* About Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+    <main className="min-h-screen flex flex-col items-center px-4 py-12 bg-background text-foreground">
+      <div className="w-full max-w-4xl flex flex-col items-start">
+        <h1 className="text-5xl font-serif font-normal mb-2 text-left pt-12">{about.title[locale]}</h1>
+        <hr className="border-t border-gray-300 dark:border-gray-500 w-1/2 mb-12 ml-0" />
+        <h2 className="text-2xl text-muted-foreground mb-12 text-left">{t('subheader')}</h2>
+        
+        {/* About Text Section */}
+        <div className="w-full mb-24">
           <div>
-            <h2 className="text-3xl mb-8">{t('subheader')}</h2>
-          </div>
-          <div>
-            <p className="text-base text-muted-foreground mb-4">{about.aboutText[locale]}</p>
+            <p className="text-base text-muted-foreground mb-4 text-left">{about.aboutText[locale]}</p>
           </div>
         </div>
+
         {/* Work Timeline */}
-        <WorkTimeline timeline={about.workTimeline} t={t} locale={locale} />
+        <div className="w-full mb-24">
+          <WorkTimeline timeline={about.workTimeline} t={t} locale={locale} />
+        </div>
+
         {/* Bare Skills Bar Diagram */}
-        <SkillsBarSection skills={about.bareSkills} t={t} locale={locale} />
+        <div className="w-full mb-24">
+          <SkillsBarSection skills={about.bareSkills} t={t} locale={locale} />
+        </div>
+
         {/* Capabilities Section */}
-        <Capabilities capabilities={about.capabilities} t={t} locale={locale} />
+        <div className="w-full mb-24">
+          <Capabilities capabilities={about.capabilities} t={t} locale={locale} />
+        </div>
+
         {/* Skills & Tools Section */}
-        <SkillsAndTools categories={about.skillsAndTools.categories} t={t} locale={locale} />
+        <div className="w-full">
+          <SkillsAndTools categories={about.skillsAndTools.categories} t={t} locale={locale} />
+        </div>
       </div>
     </main>
   );
