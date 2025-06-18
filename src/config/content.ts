@@ -396,6 +396,12 @@ export const content = {
         fr: "Plateforme E-Commerce",
         it: "Piattaforma E-Commerce"
       },
+      company: {
+        en: "TechRetail Solutions",
+        de: "TechRetail Solutions",
+        fr: "TechRetail Solutions",
+        it: "TechRetail Solutions"
+      },
       timeframe: {
         en: "Jan 2023 - Dec 2023",
         de: "Jan 2023 - Dez 2023",
@@ -422,6 +428,12 @@ export const content = {
         de: "Projektmanagement SaaS",
         fr: "SaaS de Gestion de Projet",
         it: "SaaS di Gestione Progetti"
+      },
+      company: {
+        en: "TeamFlow Technologies",
+        de: "TeamFlow Technologies",
+        fr: "TeamFlow Technologies",
+        it: "TeamFlow Technologies"
       },
       timeframe: {
         en: "Mar 2022 - Nov 2022",
@@ -450,6 +462,12 @@ export const content = {
         fr: "Tableau de Bord d'Analyse des Réseaux Sociaux",
         it: "Dashboard Analisi Social Media"
       },
+      company: {
+        en: "SocialMetrics Pro",
+        de: "SocialMetrics Pro",
+        fr: "SocialMetrics Pro",
+        it: "SocialMetrics Pro"
+      },
       timeframe: {
         en: "May 2021 - Feb 2022",
         de: "Mai 2021 - Feb 2022",
@@ -476,6 +494,12 @@ export const content = {
         de: "Fernlernplattform",
         fr: "Plateforme d'Apprentissage à Distance",
         it: "Piattaforma di Apprendimento a Distanza"
+      },
+      company: {
+        en: "EduTech Innovations",
+        de: "EduTech Innovations",
+        fr: "EduTech Innovations",
+        it: "EduTech Innovations"
       },
       timeframe: {
         en: "Aug 2020 - Apr 2021",
