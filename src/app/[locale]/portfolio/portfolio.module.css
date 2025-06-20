@@ -1,0 +1,88 @@
+/* Portfolio-specific animations and styles */
+
+.portfolioContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.floatAnimation {
+  animation: float 6s ease-in-out infinite;
+}
+
+.floatAnimationDelayed1 {
+  animation: float 6s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.floatAnimationDelayed2 {
+  animation: float 6s ease-in-out infinite;
+  animation-delay: 4s;
+}
+
+.glowEffect {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.slideUpAnimation {
+  animation: slideUp 0.6s ease-out forwards;
+}
+
+.fadeInUpAnimation {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.scaleInAnimation {
+  animation: scaleIn 0.5s ease-out forwards;
+}
+
+/* Keyframe animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px rgba(0, 150, 136, 0.2);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(0, 150, 136, 0.4);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+} 

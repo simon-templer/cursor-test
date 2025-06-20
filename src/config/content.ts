@@ -388,6 +388,20 @@ export const content = {
       }
     ]
   },
+  portfolio: {
+    intro: {
+      en: "Welcome to my portfolio! Here you'll find a collection of projects that showcase my journey as a full-stack developer. From e-commerce platforms to AI-powered applications, each project represents different challenges and technologies I've worked with. Feel free to explore and get in touch if you'd like to discuss any of these projects or potential collaborations.",
+      de: "Willkommen in meinem Portfolio! Hier finden Sie eine Sammlung von Projekten, die meine Reise als Full-Stack-Entwickler zeigen. Von E-Commerce-Plattformen bis hin zu KI-gestützten Anwendungen repräsentiert jedes Projekt verschiedene Herausforderungen und Technologien, mit denen ich gearbeitet habe. Fühlen Sie sich frei zu erkunden und kontaktieren Sie mich, wenn Sie über eines dieser Projekte oder potenzielle Zusammenarbeiten sprechen möchten.",
+      fr: "Bienvenue dans mon portfolio ! Ici, vous trouverez une collection de projets qui illustrent mon parcours en tant que développeur full-stack. Des plateformes e-commerce aux applications alimentées par l'IA, chaque projet représente différents défis et technologies avec lesquels j'ai travaillé. N'hésitez pas à explorer et à me contacter si vous souhaitez discuter de l'un de ces projets ou de collaborations potentielles.",
+      it: "Benvenuto nel mio portfolio! Qui troverai una raccolta di progetti che mostrano il mio percorso come sviluppatore full-stack. Dalle piattaforme e-commerce alle applicazioni alimentate dall'IA, ogni progetto rappresenta diverse sfide e tecnologie con cui ho lavorato. Sentiti libero di esplorare e contattami se vuoi discutere di uno di questi progetti o potenziali collaborazioni."
+    },
+    endMessage: {
+      en: "Thanks for exploring my work!",
+      de: "Vielen Dank für das Erkunden meiner Arbeit!",
+      fr: "Merci d'avoir exploré mon travail !",
+      it: "Grazie per aver esplorato il mio lavoro!"
+    }
+  },
   projects: [
     {
       title: {
@@ -520,6 +534,171 @@ export const content = {
         it: "Sviluppo di una piattaforma di apprendimento a distanza con lezioni video live, compiti e messaggistica studente-insegnante. Focus su funzionalità in tempo reale, caricamenti file sicuri e interfaccia mobile-friendly."
       },
       technologies: ["React", "Next.js", "Firebase", "WebRTC", "Material-UI", "Cloud Functions"]
+    },
+    {
+      title: {
+        en: "AI-Powered Content Management System",
+        de: "KI-gestütztes Content Management System",
+        fr: "Système de Gestion de Contenu IA",
+        it: "Sistema di Gestione Contenuti con IA"
+      },
+      company: {
+        en: "ContentFlow AI",
+        de: "ContentFlow AI",
+        fr: "ContentFlow AI",
+        it: "ContentFlow AI"
+      },
+      timeframe: {
+        en: "Jun 2023 - Sep 2023",
+        de: "Jun 2023 - Sep 2023",
+        fr: "Juin 2023 - Sept 2023",
+        it: "Giu 2023 - Set 2023"
+      },
+      role: {
+        en: "Senior Fullstack Developer",
+        de: "Senior Fullstack Entwickler",
+        fr: "Développeur Full Stack Senior",
+        it: "Sviluppatore Full Stack Senior"
+      },
+      description: {
+        en: "Developed an intelligent CMS that uses AI to automatically categorize, tag, and optimize content. Features include smart content recommendations, automated SEO optimization, and predictive analytics for content performance.",
+        de: "Entwicklung eines intelligenten CMS, das KI zur automatischen Kategorisierung, Kennzeichnung und Optimierung von Inhalten verwendet. Funktionen umfassen intelligente Inhaltsempfehlungen, automatisierte SEO-Optimierung und prädiktive Analysen für Inhaltsleistung.",
+        fr: "Développement d'un CMS intelligent qui utilise l'IA pour catégoriser, étiqueter et optimiser automatiquement le contenu. Fonctionnalités incluant des recommandations de contenu intelligentes, l'optimisation SEO automatisée et l'analyse prédictive des performances de contenu.",
+        it: "Sviluppo di un CMS intelligente che utilizza l'IA per categorizzare, etichettare e ottimizzare automaticamente i contenuti. Funzionalità includono raccomandazioni di contenuti intelligenti, ottimizzazione SEO automatizzata e analisi predittive per le prestazioni dei contenuti."
+      },
+      technologies: ["Python", "Django", "React", "OpenAI API", "PostgreSQL", "Redis", "Docker"]
+    },
+    {
+      title: {
+        en: "Real-Time Financial Trading Dashboard",
+        de: "Echtzeit-Finanzhandels-Dashboard",
+        fr: "Tableau de Bord de Trading Financier en Temps Réel",
+        it: "Dashboard di Trading Finanziario in Tempo Reale"
+      },
+      company: {
+        en: "TradeTech Solutions",
+        de: "TradeTech Solutions",
+        fr: "TradeTech Solutions",
+        it: "TradeTech Solutions"
+      },
+      timeframe: {
+        en: "Feb 2023 - May 2023",
+        de: "Feb 2023 - Mai 2023",
+        fr: "Fév 2023 - Mai 2023",
+        it: "Feb 2023 - Mag 2023"
+      },
+      role: {
+        en: "Lead Frontend Developer",
+        de: "Lead Frontend Entwickler",
+        fr: "Développeur Frontend Principal",
+        it: "Lead Sviluppatore Frontend"
+      },
+      description: {
+        en: "Built a high-performance trading dashboard with real-time market data, interactive charts, and automated trading signals. Implemented WebSocket connections for live data streaming and complex financial calculations.",
+        de: "Entwicklung eines Hochleistungs-Trading-Dashboards mit Echtzeit-Marktdaten, interaktiven Charts und automatisierten Trading-Signalen. Implementierung von WebSocket-Verbindungen für Live-Datenstreaming und komplexe Finanzberechnungen.",
+        fr: "Création d'un tableau de bord de trading haute performance avec des données de marché en temps réel, des graphiques interactifs et des signaux de trading automatisés. Mise en œuvre de connexions WebSocket pour le streaming de données en direct et les calculs financiers complexes.",
+        it: "Sviluppo di una dashboard di trading ad alte prestazioni con dati di mercato in tempo reale, grafici interattivi e segnali di trading automatizzati. Implementazione di connessioni WebSocket per lo streaming di dati live e calcoli finanziari complessi."
+      },
+      technologies: ["TypeScript", "React", "WebSocket", "D3.js", "Chart.js", "Node.js", "Redis"]
+    },
+    {
+      title: {
+        en: "Healthcare Patient Portal",
+        de: "Gesundheitswesen Patientenportal",
+        fr: "Portail Patient de Santé",
+        it: "Portale Paziente Sanitario"
+      },
+      company: {
+        en: "HealthTech Systems",
+        de: "HealthTech Systems",
+        fr: "HealthTech Systems",
+        it: "HealthTech Systems"
+      },
+      timeframe: {
+        en: "Oct 2022 - Jan 2023",
+        de: "Okt 2022 - Jan 2023",
+        fr: "Oct 2022 - Janv 2023",
+        it: "Ott 2022 - Gen 2023"
+      },
+      role: {
+        en: "Fullstack Developer",
+        de: "Fullstack Entwickler",
+        fr: "Développeur Full Stack",
+        it: "Sviluppatore Full Stack"
+      },
+      description: {
+        en: "Developed a secure patient portal for healthcare providers with appointment scheduling, medical records access, and telemedicine capabilities. Ensured HIPAA compliance and implemented robust security measures.",
+        de: "Entwicklung eines sicheren Patientenportals für Gesundheitsdienstleister mit Terminplanung, Zugang zu medizinischen Unterlagen und Telemedizin-Funktionen. Gewährleistung der HIPAA-Compliance und Implementierung robuster Sicherheitsmaßnahmen.",
+        fr: "Développement d'un portail patient sécurisé pour les prestataires de soins avec planification de rendez-vous, accès aux dossiers médicaux et capacités de télémédecine. Assurer la conformité HIPAA et mettre en œuvre des mesures de sécurité robustes.",
+        it: "Sviluppo di un portale paziente sicuro per fornitori di assistenza sanitaria con pianificazione appuntamenti, accesso alle cartelle cliniche e capacità di telemedicina. Garantire la conformità HIPAA e implementare misure di sicurezza robuste."
+      },
+      technologies: ["Angular", "Java Spring", "PostgreSQL", "HL7 FHIR", "OAuth2", "AWS", "HIPAA"]
+    },
+    {
+      title: {
+        en: "Mobile Fitness Tracking App",
+        de: "Mobile Fitness-Tracking-App",
+        fr: "Application Mobile de Suivi Fitness",
+        it: "App Mobile di Monitoraggio Fitness"
+      },
+      company: {
+        en: "FitTech Mobile",
+        de: "FitTech Mobile",
+        fr: "FitTech Mobile",
+        it: "FitTech Mobile"
+      },
+      timeframe: {
+        en: "Jul 2022 - Sep 2022",
+        de: "Jul 2022 - Sep 2022",
+        fr: "Juil 2022 - Sept 2022",
+        it: "Lug 2022 - Set 2022"
+      },
+      role: {
+        en: "Mobile Developer",
+        de: "Mobile Entwickler",
+        fr: "Développeur Mobile",
+        it: "Sviluppatore Mobile"
+      },
+      description: {
+        en: "Created a cross-platform fitness tracking app with GPS tracking, workout planning, and social features. Integrated with wearable devices and implemented offline functionality for outdoor activities.",
+        de: "Entwicklung einer plattformübergreifenden Fitness-Tracking-App mit GPS-Tracking, Trainingsplanung und Social-Features. Integration mit Wearable-Geräten und Implementierung von Offline-Funktionalität für Outdoor-Aktivitäten.",
+        fr: "Création d'une application de suivi fitness multiplateforme avec suivi GPS, planification d'entraînement et fonctionnalités sociales. Intégration avec des appareils portables et mise en œuvre de fonctionnalités hors ligne pour les activités de plein air.",
+        it: "Sviluppo di un'app di monitoraggio fitness multipiattaforma con tracciamento GPS, pianificazione allenamenti e funzionalità social. Integrazione con dispositivi indossabili e implementazione di funzionalità offline per attività all'aperto."
+      },
+      technologies: ["React Native", "Node.js", "MongoDB", "Google Maps API", "Bluetooth LE", "Firebase"]
+    },
+    {
+      title: {
+        en: "Blockchain Supply Chain Tracker",
+        de: "Blockchain-Lieferketten-Tracker",
+        fr: "Traceur de Chaîne d'Approvisionnement Blockchain",
+        it: "Tracker Catena di Approvvigionamento Blockchain"
+      },
+      company: {
+        en: "ChainTrace Solutions",
+        de: "ChainTrace Solutions",
+        fr: "ChainTrace Solutions",
+        it: "ChainTrace Solutions"
+      },
+      timeframe: {
+        en: "Apr 2022 - Jun 2022",
+        de: "Apr 2022 - Jun 2022",
+        fr: "Avr 2022 - Juin 2022",
+        it: "Apr 2022 - Giu 2022"
+      },
+      role: {
+        en: "Blockchain Developer",
+        de: "Blockchain Entwickler",
+        fr: "Développeur Blockchain",
+        it: "Sviluppatore Blockchain"
+      },
+      description: {
+        en: "Developed a blockchain-based supply chain tracking system for food safety and authenticity verification. Implemented smart contracts for automated compliance checks and real-time product tracing.",
+        de: "Entwicklung eines blockchain-basierten Lieferketten-Tracking-Systems für Lebensmittelsicherheit und Authentizitätsprüfung. Implementierung von Smart Contracts für automatisierte Compliance-Prüfungen und Echtzeit-Produktverfolgung.",
+        fr: "Développement d'un système de traçabilité de chaîne d'approvisionnement basé sur la blockchain pour la sécurité alimentaire et la vérification d'authenticité. Mise en œuvre de contrats intelligents pour les vérifications de conformité automatisées et le traçage de produits en temps réel.",
+        it: "Sviluppo di un sistema di tracciabilità della catena di approvvigionamento basato su blockchain per la sicurezza alimentare e la verifica dell'autenticità. Implementazione di smart contract per controlli di conformità automatizzati e tracciamento prodotti in tempo reale."
+      },
+      technologies: ["Solidity", "Web3.js", "React", "Node.js", "IPFS", "Ethereum", "Truffle"]
     }
   ],
   contact: {
