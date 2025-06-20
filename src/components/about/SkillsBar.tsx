@@ -59,17 +59,13 @@ interface SkillsBarSectionProps {
     name: Record<string, string>;
     percent: number;
   }>;
-  t: (key: string, params?: Record<string, string>) => string;
   locale: string;
 }
 
-export function SkillsBarSection({ skills, t, locale }: SkillsBarSectionProps) {
+export function SkillsBarSection({ skills, locale }: SkillsBarSectionProps) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start mt-12">
-      <div>
-        <h2 className="text-4xl font-serif mb-8">{t('bareSkillsHeader')}</h2>
-      </div>
-      <div className="w-full flex flex-col gap-8">
+    <div className="w-full flex justify-center">
+      <div className="w-11/12 flex flex-col gap-8">
         {skills.map((skill, idx) => (
           <SkillBar
             key={idx}

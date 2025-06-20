@@ -6,6 +6,8 @@ import { WorkTimeline } from '@/components/about/WorkTimeline';
 import { SkillsBarSection } from '@/components/about/SkillsBar';
 import { Capabilities } from '@/components/about/Capabilities';
 import { SkillsAndTools } from '@/components/about/SkillsAndTools';
+import { AccentLine } from '@/components/ui/AccentLine';
+import { CalendarIcon, BarChartIcon, LightningBoltIcon, GearIcon } from '@radix-ui/react-icons';
 
 export default function AboutPage({ params }: { params: Promise<{ locale: 'en' | 'de' | 'fr' | 'it' }> }) {
   const { locale } = React.use(params);
@@ -24,27 +26,43 @@ export default function AboutPage({ params }: { params: Promise<{ locale: 'en' |
           <div>
             <p className="text-base text-muted-foreground mb-4 text-left">{about.aboutText[locale]}</p>
           </div>
-        </div>
+        </div> 
 
         {/* Work Timeline */}
-        <div className="w-full mb-24">
-          <WorkTimeline timeline={about.workTimeline} t={t} locale={locale} />
-        </div>
+        <AccentLine 
+          icon={<CalendarIcon width={24} height={24} className="w-6 h-6 text-accent dark:text-white" />} 
+          title={t('workTimelineHeader')}
+          className="w-full mb-24"
+        >
+          <WorkTimeline timeline={about.workTimeline} locale={locale} />
+        </AccentLine>
 
         {/* Bare Skills Bar Diagram */}
-        <div className="w-full mb-24">
-          <SkillsBarSection skills={about.bareSkills} t={t} locale={locale} />
-        </div>
+        <AccentLine 
+          icon={<BarChartIcon width={24} height={24} className="w-6 h-6 text-accent dark:text-white" />} 
+          title={t('bareSkillsHeader')}
+          className="w-full mb-24"
+        >
+          <SkillsBarSection skills={about.bareSkills} locale={locale} />
+        </AccentLine>
 
         {/* Capabilities Section */}
-        <div className="w-full mb-24">
-          <Capabilities capabilities={about.capabilities} t={t} locale={locale} />
-        </div>
+        <AccentLine 
+          icon={<LightningBoltIcon width={24} height={24} className="w-6 h-6 text-accent dark:text-white" />} 
+          title={t('capabilitiesHeader')}
+          className="w-full mb-24"
+        >
+          <Capabilities capabilities={about.capabilities} locale={locale} />
+        </AccentLine>
 
         {/* Skills & Tools Section */}
-        <div className="w-full">
-          <SkillsAndTools categories={about.skillsAndTools.categories} t={t} locale={locale} />
-        </div>
+        <AccentLine 
+          icon={<GearIcon width={24} height={24} className="w-6 h-6 text-accent dark:text-white" />} 
+          title={t('skillsAndToolsHeader')}
+          className="w-full"
+        >
+          <SkillsAndTools categories={about.skillsAndTools.categories} locale={locale} />
+        </AccentLine>
       </div>
     </main>
   );
