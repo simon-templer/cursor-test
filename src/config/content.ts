@@ -42,48 +42,123 @@ export const content = {
     workTimeline: [
       {
         role: {
-          en: "Designer of week",
-          de: "Designer der Woche",
-          fr: "Designer de la semaine",
-          it: "Designer della settimana"
+          en: "",
+          de: "Founder - Fullstack Software Engineer",
+          fr: "",
+          it: ""
         },
         company: {
-          en: "YAdfi",
-          de: "YAdfi",
-          fr: "YAdfi",
-          it: "YAdfi"
+          en: "",
+          de: "Konoto GmbH",
+          fr: "",
+          it: ""
         },
-        year: 2020
+        timeframe: {
+          en: "",
+          de: "03/2020 – Heute",
+          fr: "",
+          it: ""
+        }
       },
       {
         role: {
-          en: "Designer of week",
-          de: "Designer der Woche",
-          fr: "Designer de la semaine",
-          it: "Designer della settimana"
+          en: "",
+          de: "Senior IT Consultant ",
+          fr: "",
+          it: ""
         },
         company: {
-          en: "Jamalya",
-          de: "Jamalya",
-          fr: "Jamalya",
-          it: "Jamalya"
+          en: "",
+          de: "ERNI Consulting AG",
+          fr: "",
+          it: ""
         },
-        year: 2019
+        timeframe: {
+          en: "02/2016 – 02/2020",
+          de: "02/2016 – 02/2020",
+          fr: "02/2016 – 02/2020",
+          it: "02/2016 – 02/2020"
+        }
       },
       {
         role: {
-          en: "Designer of week",
-          de: "Designer der Woche",
-          fr: "Designer de la semaine",
-          it: "Designer della settimana"
+          en: "",
+          de: "Software Developer",
+          fr: "",
+          it: ""
         },
         company: {
-          en: "ALquds",
-          de: "ALquds",
-          fr: "ALquds",
-          it: "ALquds"
+          en: "",
+          de: "Kofax Deutschland AG",
+          fr: "",
+          it: ""
         },
-        year: 2019
+        timeframe: {
+          en: "04/2015 – 01/2016",
+          de: "04/2015 – 01/2016",
+          fr: "04/2015 – 01/2016",
+          it: "04/2015 – 01/2016"
+        }
+      },
+      {
+        role: {
+          en: "",
+          de: "Junior Software Developer",
+          fr: "",
+          it: ""
+        },
+        company: {
+          en: "",
+          de: "SOFTPRO GmbH",
+          fr: "",
+          it: ""
+        },
+        timeframe: {
+          en: "09/2012 – 03/2015",
+          de: "09/2012 – 03/2015",
+          fr: "09/2012 – 03/2015",
+          it: "09/2012 – 03/2015"
+        }
+      },
+      {
+        role: {
+          en: "",
+          de: "Master Student",
+          fr: "",
+          it: ""
+        },
+        company: {
+          en: "",
+          de: "FOM Stuttgart",
+          fr: "",
+          it: ""
+        },
+        timeframe: {
+          en: "09/2012 – 08/2015",
+          de: "09/2012 – 08/2015",
+          fr: "09/2012 – 08/2015",
+          it: "09/2012 – 08/2015"
+        }
+      },
+      {
+        role: {
+          en: "",
+          de: "Bachelor Student",
+          fr: "",
+          it: ""
+        },
+        company: {
+          en: "",
+          de: "Hochschule Furtwangen",
+          fr: "",
+          it: ""
+        },
+        timeframe: {
+          en: "06/2009 – 08/2011",
+          de: "06/2009 – 08/2011",
+          fr: "06/2009 – 08/2011",
+          it: "06/2009 – 08/2011"
+        }
       }
     ],
     image: "/images/about-image.png",
@@ -526,7 +601,7 @@ export const content = {
       },
       timeframe: {
         en: "",
-        de: "01.2024 – Heute",
+        de: "01/2024 – Heute",
         fr: "",
         it: ""
       },
@@ -559,7 +634,7 @@ export const content = {
       },
       timeframe: {
         en: "",
-        de: "07.2023 – 11.2023",
+        de: "07/2023 – 11/2023",
         fr: "",
         it: ""
       },
@@ -592,7 +667,7 @@ export const content = {
       },
       timeframe: {
         en: "",
-        de: "07.2021 – 06.2023",
+        de: "07/2021 – 06/2023",
         fr: "",
         it: ""
       },
@@ -625,7 +700,7 @@ export const content = {
       },
       timeframe: {
         en: "",
-        de: "01.2021 – 06.2021",
+        de: "01/2021 – 06/2021",
         fr: "",
         it: ""
       },
@@ -658,7 +733,7 @@ export const content = {
       },
       timeframe: {
         en: "",
-        de: "03.2020 – 12.2020",
+        de: "03/2020 – 12/2020",
         fr: "",
         it: ""
       },
@@ -691,7 +766,7 @@ export const content = {
       },
       timeframe: {
         en: "",
-        de: "06.2019 – 02.2020",
+        de: "06/2019 – 02/2020",
         fr: "",
         it: ""
       },
@@ -724,7 +799,7 @@ export const content = {
       },
       timeframe: {
         en: "",
-        de: "01.2017 – 12.2018",
+        de: "01/2017 – 12/2018",
         fr: "",
         it: ""
       },
@@ -757,7 +832,7 @@ export const content = {
       },
       timeframe: {
         en: "",
-        de: "03.2016 – 12.2016",
+        de: "03/2016 – 12/2016",
         fr: "",
         it: ""
       },
@@ -790,7 +865,7 @@ export const content = {
       },
       timeframe: {
         en: "",
-        de: "09.2012 – 01.2016",
+        de: "09/2012 – 01/2016",
         fr: "",
         it: ""
       },

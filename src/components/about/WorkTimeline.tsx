@@ -4,7 +4,7 @@ interface WorkTimelineProps {
   timeline: Array<{
     role: Record<string, string>;
     company: Record<string, string>;
-    year: number;
+    timeframe: Record<string, string>;
   }>;
   locale: string;
 }
@@ -18,7 +18,7 @@ export function WorkTimeline({ timeline, locale }: WorkTimelineProps) {
             <tr key={idx} className="border-b border-muted">
               <td className="py-2 font-bold">{item.role[locale]}</td>
               <td className="py-2 text-center">{item.company[locale]}</td>
-              <td className="py-2 text-right">{item.year}</td>
+              <td className="py-2 text-right">{item.timeframe[locale]}</td>
             </tr>
           ))}
         </tbody>
