@@ -3,6 +3,7 @@ import { content } from "@/config/content";
 import { getTranslations } from 'next-intl/server';
 import { routing } from "@/i18n/routing";
 import { AnimatedProjectCard } from "@/components/AnimatedProjectCard";
+import { AnimatedIntroText } from "@/components/AnimatedIntroText";
 import styles from './portfolio.module.css';
 
 type Locale = typeof routing.locales[number];
@@ -48,11 +49,7 @@ export default async function PortfolioPage({
         </div>
         
         {/* Portfolio intro text */}
-        <div className="w-full mb-8 sm:mb-12 animate-in fade-in duration-1000 delay-500">
-          <p className="text-foreground/80 text-base sm:text-lg leading-relaxed max-w-3xl">
-            {(content as Content).portfolio.intro[locale]}
-          </p>
-        </div>
+        <AnimatedIntroText locale={locale} />
         
         {/* Projects grid with staggered animations */}
         <div className="w-full flex flex-col gap-12 sm:gap-16">
