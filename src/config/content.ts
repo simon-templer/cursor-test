@@ -719,14 +719,14 @@ export const content = {
       label: {
         en: 'GitHub', de: 'GitHub', fr: 'GitHub', it: 'GitHub'
       },
-      url: 'https://github.com/'
+      url: 'https://github.com/simon-templer'
     },
     {
       icon: 'linkedin',
       label: {
         en: 'LinkedIn', de: 'LinkedIn', fr: 'LinkedIn', it: 'LinkedIn'
       },
-      url: 'https://linkedin.com/'
+      url: 'https://www.linkedin.com/in/simon-schmalz-336333102/'
     }
   ]
 } 
