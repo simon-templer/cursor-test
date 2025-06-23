@@ -7,10 +7,11 @@ import { Header } from "@/components/header";
 import { SocialBar } from "@/components/SocialBar";
 import { exo2 } from "../fonts";
 import "../globals.css";
+import { FaviconUpdater } from "@/components/FaviconUpdater";
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "My personal portfolio website",
+  title: "Konoto GmbH",
+  description: "Konoto GmbH Portfolio",
 };
 
 export function generateStaticParams() {
@@ -43,6 +44,7 @@ export default async function LocaleLayout({
           disableTransitionOnChange
         >
           <NextIntlClientProvider locale={locale} messages={messages} timeZone="UTC">
+            <FaviconUpdater />
             <Header />
             <div className="sm:ml-16 min-h-[calc(100vh-4rem)]">
               {children}
