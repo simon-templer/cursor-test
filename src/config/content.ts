@@ -314,7 +314,117 @@ export const content = {
           ]
         }
       ]
-    }
+    },
+    certificates: [
+      {
+        name: {
+          en: "Certified Kubernetes Administrator (CKA)",
+          de: "Zertifizierter Kubernetes Administrator (CKA)",
+          fr: "Administrateur Kubernetes Certifié (CKA)",
+          it: "Amministratore Kubernetes Certificato (CKA)"
+        },
+        issuer: {
+          en: "Cloud Native Computing Foundation (CNCF)",
+          de: "Cloud Native Computing Foundation (CNCF)",
+          fr: "Cloud Native Computing Foundation (CNCF)",
+          it: "Cloud Native Computing Foundation (CNCF)"
+        },
+        date: "2024",
+        icon: "☸️",
+        level: "Advanced",
+        category: "Cloud & DevOps"
+      },
+      {
+        name: {
+          en: "AWS Solutions Architect - Associate",
+          de: "AWS Solutions Architect - Associate",
+          fr: "AWS Solutions Architect - Associate",
+          it: "AWS Solutions Architect - Associate"
+        },
+        issuer: {
+          en: "Amazon Web Services",
+          de: "Amazon Web Services",
+          fr: "Amazon Web Services",
+          it: "Amazon Web Services"
+        },
+        date: "2023",
+        icon: "☁️",
+        level: "Intermediate",
+        category: "Cloud & DevOps"
+      },
+      {
+        name: {
+          en: "Azure Solutions Architect Expert",
+          de: "Azure Solutions Architect Expert",
+          fr: "Expert Architecte de Solutions Azure",
+          it: "Esperto Architetto di Soluzioni Azure"
+        },
+        issuer: {
+          en: "Microsoft",
+          de: "Microsoft",
+          fr: "Microsoft",
+          it: "Microsoft"
+        },
+        date: "2023",
+        icon: "🔷",
+        level: "Expert",
+        category: "Cloud & DevOps"
+      },
+      {
+        name: {
+          en: "Google Cloud Professional Cloud Architect",
+          de: "Google Cloud Professional Cloud Architect",
+          fr: "Architecte Cloud Professionnel Google Cloud",
+          it: "Architetto Cloud Professionale Google Cloud"
+        },
+        issuer: {
+          en: "Google Cloud",
+          de: "Google Cloud",
+          fr: "Google Cloud",
+          it: "Google Cloud"
+        },
+        date: "2023",
+        icon: "🌐",
+        level: "Expert",
+        category: "Cloud & DevOps"
+      },
+      {
+        name: {
+          en: "Certified Kubernetes Application Developer (CKAD)",
+          de: "Zertifizierter Kubernetes Anwendungsentwickler (CKAD)",
+          fr: "Développeur d'Applications Kubernetes Certifié (CKAD)",
+          it: "Sviluppatore di Applicazioni Kubernetes Certificato (CKAD)"
+        },
+        issuer: {
+          en: "Cloud Native Computing Foundation (CNCF)",
+          de: "Cloud Native Computing Foundation (CNCF)",
+          fr: "Cloud Native Computing Foundation (CNCF)",
+          it: "Cloud Native Computing Foundation (CNCF)"
+        },
+        date: "2024",
+        icon: "⚛️",
+        level: "Advanced",
+        category: "Development"
+      },
+      {
+        name: {
+          en: "Docker Certified Associate",
+          de: "Docker Certified Associate",
+          fr: "Associé Certifié Docker",
+          it: "Associato Certificato Docker"
+        },
+        issuer: {
+          en: "Docker Inc.",
+          de: "Docker Inc.",
+          fr: "Docker Inc.",
+          it: "Docker Inc."
+        },
+        date: "2023",
+        icon: "🐳",
+        level: "Intermediate",
+        category: "Development"
+      }
+    ]
   },
   skills: {
     title: {

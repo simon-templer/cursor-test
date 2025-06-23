@@ -42,6 +42,7 @@
     "bareSkillsHeader": "Skills",
     "capabilitiesHeader": "Compétences",
     "skillsAndToolsHeader": "Compétences & Outils",
-    "skillsAndToolsToggle": "Afficher: {category}"
+    "skillsAndToolsToggle": "Afficher: {category}",
+    "certificatesHeader": "Certifications & Réalisations"
   }
 } 

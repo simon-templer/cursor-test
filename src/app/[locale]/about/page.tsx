@@ -6,8 +6,9 @@ import { WorkTimeline } from '@/components/about/WorkTimeline';
 import { SkillsBarSection } from '@/components/about/SkillsBar';
 import { Capabilities } from '@/components/about/Capabilities';
 import { SkillsAndTools } from '@/components/about/SkillsAndTools';
+import { Certificates } from '@/components/about/Certificates';
 import { AccentLine } from '@/components/ui/AccentLine';
-import { CalendarIcon, BarChartIcon, LightningBoltIcon, GearIcon } from '@radix-ui/react-icons';
+import { CalendarIcon, BarChartIcon, LightningBoltIcon, GearIcon, StarIcon } from '@radix-ui/react-icons';
 
 export default function AboutPage({ params }: { params: Promise<{ locale: 'en' | 'de' | 'fr' | 'it' }> }) {
   const { locale } = React.use(params);
@@ -59,9 +60,18 @@ export default function AboutPage({ params }: { params: Promise<{ locale: 'en' |
         <AccentLine 
           icon={<GearIcon width={24} height={24} className="w-6 h-6 text-accent dark:text-white" />} 
           title={t('skillsAndToolsHeader')}
-          className="w-full"
+          className="w-full mb-24"
         >
           <SkillsAndTools categories={about.skillsAndTools.categories} locale={locale} />
+        </AccentLine>
+
+        {/* Certificates Section */}
+        <AccentLine 
+          icon={<StarIcon width={24} height={24} className="w-6 h-6 text-accent dark:text-white" />} 
+          title={t('certificatesHeader')}
+          className="w-full"
+        >
+          <Certificates certificates={about.certificates} locale={locale} />
         </AccentLine>
       </div>
     </main>
