@@ -403,301 +403,302 @@ export const content = {
   projects: [
     {
       title: {
-        en: "E-Commerce Platform",
-        de: "E-Commerce-Plattform",
-        fr: "Plateforme E-Commerce",
-        it: "Piattaforma E-Commerce"
+        en: "",
+        de: "Aufbau eines BIM Software Portfolios zur digitalen modellierung ziviler Schienen Infrastruktur",
+        fr: "",
+        it: ""
       },
       company: {
-        en: "TechRetail Solutions",
-        de: "TechRetail Solutions",
-        fr: "TechRetail Solutions",
-        it: "TechRetail Solutions"
+        en: "",
+        de: "Schweizerische Bundesbahnen SBB",
+        fr: "",
+        it: ""
       },
       timeframe: {
-        en: "Jan 2023 - Dec 2023",
-        de: "Jan 2023 - Dez 2023",
-        fr: "Janv 2023 - Déc 2023",
-        it: "Gen 2023 - Dic 2023"
+        en: "",
+        de: "01.2024 – Heute",
+        fr: "",
+        it: ""
       },
       role: {
-        en: "Lead Fullstack Developer",
-        de: "Lead Fullstack Entwickler",
-        fr: "Développeur Full Stack Principal",
-        it: "Lead Sviluppatore Full Stack"
+        en: "Fullstack Software Engineer",
+        de: "",
+        fr: "",
+        it: ""
       },
       description: {
-        en: "Developed a scalable e-commerce platform supporting thousands of concurrent users, with real-time inventory, payment integration, and an admin dashboard. Implemented authentication, product management, and order processing workflows.",
-        de: "Entwicklung einer skalierbaren E-Commerce-Plattform für Tausende gleichzeitiger Benutzer, mit Echtzeit-Inventar, Zahlungsintegration und einem Admin-Dashboard. Implementierung von Authentifizierung, Produktmanagement und Bestellabwicklung.",
-        fr: "Développement d'une plateforme e-commerce évolutive prenant en charge des milliers d'utilisateurs simultanés, avec inventaire en temps réel, intégration de paiement et tableau de bord administrateur. Mise en œuvre de l'authentification, de la gestion des produits et des flux de traitement des commandes.",
-        it: "Sviluppo di una piattaforma e-commerce scalabile che supporta migliaia di utenti simultanei, con inventario in tempo reale, integrazione dei pagamenti e dashboard amministrativa. Implementazione di autenticazione, gestione prodotti e flussi di elaborazione ordini."
+        en: "",
+        de: "Aufbau eines BIM-Softwareportfolios zur digitalen Modellierung ziviler Schieneninfrastruktur. Entwicklung von Autodesk Civil3D-Plugins zur automatisierten Verarbeitung und Analyse von Infrastrukturmodellen. Umsetzung domänenspezifischer Anforderungen mit funktionaler Programmierung und Domain-Driven Design. Enge Zusammenarbeit mit Fachexperten aus Planung und Engineering.",
+        fr: "",
+        it: ""
       },
-      technologies: ["Next.js", "React", "Node.js", "Express", "MongoDB", "Stripe API", "TailwindCSS"]
+      technologies: [ "BIM", "Autodesk Civil3D", "Java 17", "Spring Boot", "Angular 19", "Functional Programming", "Domain Driven Design", "Directus CMS", "Tekton", "OpenShift", "ArgoCD", ]
     },
     {
       title: {
-        en: "Project Management SaaS",
-        de: "Projektmanagement SaaS",
-        fr: "SaaS de Gestion de Projet",
-        it: "SaaS di Gestione Progetti"
+        en: "",
+        de: "Aufbau von UI Webcomponent Library",
+        fr: "",
+        it: ""
       },
       company: {
-        en: "TeamFlow Technologies",
-        de: "TeamFlow Technologies",
-        fr: "TeamFlow Technologies",
-        it: "TeamFlow Technologies"
+        en: "Visana",
+        de: "Visana",
+        fr: "Visana",
+        it: "Visana"
       },
       timeframe: {
-        en: "Mar 2022 - Nov 2022",
-        de: "Mär 2022 - Nov 2022",
-        fr: "Mars 2022 - Nov 2022",
-        it: "Mar 2022 - Nov 2022"
+        en: "",
+        de: "07.2023 – 11.2023",
+        fr: "",
+        it: ""
       },
       role: {
-        en: "Fullstack Developer",
-        de: "Fullstack Entwickler",
-        fr: "Développeur Full Stack",
-        it: "Sviluppatore Full Stack"
+        en: "Fullstack Software Engineer",
+        de: "",
+        fr: "",
+        it: ""
       },
       description: {
-        en: "Built a SaaS project management tool for teams, featuring kanban boards, real-time collaboration, notifications, and analytics. Focused on robust backend APIs, secure authentication, and a responsive UI.",
-        de: "Entwicklung eines SaaS-Projektmanagement-Tools für Teams mit Kanban-Boards, Echtzeit-Zusammenarbeit, Benachrichtigungen und Analysen. Fokus auf robuste Backend-APIs, sichere Authentifizierung und responsives UI.",
-        fr: "Création d'un outil de gestion de projet SaaS pour les équipes, avec tableaux Kanban, collaboration en temps réel, notifications et analyses. Axé sur des API backend robustes, une authentification sécurisée et une interface utilisateur responsive.",
-        it: "Sviluppo di uno strumento SaaS di gestione progetti per team, con board Kanban, collaborazione in tempo reale, notifiche e analisi. Focus su API backend robuste, autenticazione sicura e UI responsive."
+        en: "",
+        de: "Konzeption und Umsetzung einer wiederverwendbaren Webcomponent-Library auf Basis von Template-driven Forms zur schrittweisen Ablösung bestehender JSF-Anwendungen. Fokus auf einfache Integration, konsistentes UX und nachhaltige Wartbarkeit. Mitarbeit im agilen Umfeld mit SCRUM und Kanban.",
+        fr: "",
+        it: ""
       },
-      technologies: ["React", "Next.js", "PostgreSQL", "Prisma", "Socket.io", "TypeScript", "Chakra UI"]
+      technologies: [ "Angular 15", "NX", "Zod", "Cypress", "Template-Driven Forms", "CSS", "JSF"]
     },
     {
       title: {
-        en: "Social Media Analytics Dashboard",
-        de: "Social Media Analyse-Dashboard",
-        fr: "Tableau de Bord d'Analyse des Réseaux Sociaux",
-        it: "Dashboard Analisi Social Media"
+        en: "",
+        de: "Modernisierung bestehenden Softwareportfolios",
+        fr: "",
+        it: ""
       },
       company: {
-        en: "SocialMetrics Pro",
-        de: "SocialMetrics Pro",
-        fr: "SocialMetrics Pro",
-        it: "SocialMetrics Pro"
+        en: "",
+        de: "Organisation und Informatik der Stadt Zürich (OIZ)",
+        fr: "",
+        it: ""
       },
       timeframe: {
-        en: "May 2021 - Feb 2022",
-        de: "Mai 2021 - Feb 2022",
-        fr: "Mai 2021 - Fév 2022",
-        it: "Mag 2021 - Feb 2022"
+        en: "",
+        de: "07.2021 – 06.2023",
+        fr: "",
+        it: ""
       },
       role: {
-        en: "Fullstack Developer",
-        de: "Fullstack Entwickler",
-        fr: "Développeur Full Stack",
-        it: "Sviluppatore Full Stack"
+        en: "Fullstack Software Engineer",
+        de: "",
+        fr: "",
+        it: ""
       },
       description: {
-        en: "Created a dashboard for tracking and visualizing social media metrics across multiple platforms. Integrated third-party APIs, built custom data visualizations, and implemented user authentication and role-based access.",
-        de: "Entwicklung eines Dashboards zur Verfolgung und Visualisierung von Social-Media-Metriken über mehrere Plattformen hinweg. Integration von Drittanbieter-APIs, Erstellung benutzerdefinierter Datenvisualisierungen und Implementierung von Benutzerauthentifizierung und rollenbasiertem Zugriff.",
-        fr: "Création d'un tableau de bord pour suivre et visualiser les métriques des réseaux sociaux sur plusieurs plateformes. Intégration d'API tierces, construction de visualisations de données personnalisées et mise en œuvre de l'authentification des utilisateurs et de l'accès basé sur les rôles.",
-        it: "Sviluppo di una dashboard per monitorare e visualizzare metriche dei social media su più piattaforme. Integrazione di API di terze parti, creazione di visualizzazioni dati personalizzate e implementazione di autenticazione utente e accesso basato su ruoli."
+        en: "",
+        de: "Modernisierung und Cloud-Migration von über 20 Fachanwendungen der Stadt Zürich, darunter Parkverwaltung, Zahlungssysteme und Auskunftsdienste. Verantwortung für Neuentwicklung, Anforderungsanalyse mit Stakeholdern, Dokumentation sowie Umsetzung im agilen Umfeld mit SCRUM und Kanban.",
+        fr: "",
+        it: ""
       },
-      technologies: ["Vue.js", "Node.js", "Express", "D3.js", "MySQL", "JWT"]
+      technologies: ["Flowable", "JavaEE Micro Profile", "Open Liberty", "Angular 15", "Oracle DB", "Cucumber", "Cypress", " Gitlab CI/CD", "ArgoCD"]
     },
     {
       title: {
-        en: "Remote Learning Platform",
-        de: "Fernlernplattform",
-        fr: "Plateforme d'Apprentissage à Distance",
-        it: "Piattaforma di Apprendimento a Distanza"
+        en: "",
+        de: " Entwicklung eines internen Web-Frontends für Kundenbetreuer zur Verwaltung von Säule 3a Lösungen",
+        fr: "",
+        it: ""
       },
       company: {
-        en: "EduTech Innovations",
-        de: "EduTech Innovations",
-        fr: "EduTech Innovations",
-        it: "EduTech Innovations"
+        en: "",
+        de: "Zürcher Kantonalbank (ZKB)",
+        fr: "",
+        it: ""
       },
       timeframe: {
-        en: "Aug 2020 - Apr 2021",
-        de: "Aug 2020 - Apr 2021",
-        fr: "Août 2020 - Avr 2021",
-        it: "Ago 2020 - Apr 2021"
+        en: "",
+        de: "01.2021 – 06.2021",
+        fr: "",
+        it: ""
       },
       role: {
-        en: "Fullstack Developer",
-        de: "Fullstack Entwickler",
-        fr: "Développeur Full Stack",
-        it: "Sviluppatore Full Stack"
+        en: "Fullstack Software Engineer",
+        de: "",
+        fr: "",
+        it: ""
       },
       description: {
-        en: "Engineered a remote learning platform with live video classes, assignments, and student-teacher messaging. Focused on real-time features, secure file uploads, and a mobile-friendly interface.",
-        de: "Entwicklung einer Fernlernplattform mit Live-Videokursen, Aufgaben und Schüler-Lehrer-Messaging. Fokus auf Echtzeit-Funktionen, sichere Datei-Uploads und eine mobile-freundliche Benutzeroberfläche.",
-        fr: "Conception d'une plateforme d'apprentissage à distance avec des cours vidéo en direct, des devoirs et une messagerie élève-enseignant. Axée sur les fonctionnalités en temps réel, les téléchargements de fichiers sécurisés et une interface adaptée aux mobiles.",
-        it: "Sviluppo di una piattaforma di apprendimento a distanza con lezioni video live, compiti e messaggistica studente-insegnante. Focus su funzionalità in tempo reale, caricamenti file sicuri e interfaccia mobile-friendly."
+        en: "",
+        de: "Neuentwicklung eines internen Web-Frontends für Kundenbetreuer der ZKB zur Verwaltung von Säule 3a Lösungen. Integration in bestehende Micro-Frontend-Architektur, Anbindung an Umsysteme, API-Design sowie enge Zusammenarbeit mit Stakeholdern.",
+        fr: "",
+        it: ""
       },
-      technologies: ["React", "Next.js", "Firebase", "WebRTC", "Material-UI", "Cloud Functions"]
+      technologies: ["Spring Boot", "Java 17",  " Micro Web-Frontend", "Angular 13", "Cypress", "Cucumber"]
     },
     {
       title: {
-        en: "AI-Powered Content Management System",
-        de: "KI-gestütztes Content Management System",
-        fr: "Système de Gestion de Contenu IA",
-        it: "Sistema di Gestione Contenuti con IA"
+        en: "",
+        de: "Enwicklung eines internen Vertriebspartner Daten Portals",
+        fr: "",
+        it: ""
       },
       company: {
-        en: "ContentFlow AI",
-        de: "ContentFlow AI",
-        fr: "ContentFlow AI",
-        it: "ContentFlow AI"
+        en: "",
+        de: "Helsana Versicherung AG",
+        fr: "",
+        it: ""
       },
       timeframe: {
-        en: "Jun 2023 - Sep 2023",
-        de: "Jun 2023 - Sep 2023",
-        fr: "Juin 2023 - Sept 2023",
-        it: "Giu 2023 - Set 2023"
+        en: "",
+        de: "03.2020 – 12.2020",
+        fr: "",
+        it: ""
       },
       role: {
-        en: "Senior Fullstack Developer",
-        de: "Senior Fullstack Entwickler",
-        fr: "Développeur Full Stack Senior",
-        it: "Sviluppatore Full Stack Senior"
+        en: "Fullstack Software Engineer",
+        de: "",
+        fr: "",
+        it: ""
       },
       description: {
-        en: "Developed an intelligent CMS that uses AI to automatically categorize, tag, and optimize content. Features include smart content recommendations, automated SEO optimization, and predictive analytics for content performance.",
-        de: "Entwicklung eines intelligenten CMS, das KI zur automatischen Kategorisierung, Kennzeichnung und Optimierung von Inhalten verwendet. Funktionen umfassen intelligente Inhaltsempfehlungen, automatisierte SEO-Optimierung und prädiktive Analysen für Inhaltsleistung.",
-        fr: "Développement d'un CMS intelligent qui utilise l'IA pour catégoriser, étiqueter et optimiser automatiquement le contenu. Fonctionnalités incluant des recommandations de contenu intelligentes, l'optimisation SEO automatisée et l'analyse prédictive des performances de contenu.",
-        it: "Sviluppo di un CMS intelligente che utilizza l'IA per categorizzare, etichettare e ottimizzare automaticamente i contenuti. Funzionalità includono raccomandazioni di contenuti intelligenti, ottimizzazione SEO automatizzata e analisi predittive per le prestazioni dei contenuti."
+        en: "",
+        de: "Neuentwicklung eines internen Portals zur Verwaltung von Vertriebspartnerdaten für Helsana auf Basis einer Microservice-Architektur. Verantwortlich für architektonisches Design, Umsetzung und Testing im agilen Umfeld. Enge Abstimmung mit Stakeholdern, Erstellung technischer Dokumentation sowie kontinuierliches Bug Tracking.",
+        fr: "",
+        it: ""
       },
-      technologies: ["Python", "Django", "React", "OpenAI API", "PostgreSQL", "Redis", "Docker"]
+      technologies: ["Spting Boot", "Microservice Architecture", "Java 11", "Angular 9", "Cypress", "Gitlab CI/CD", "Docker"]
     },
     {
       title: {
-        en: "Real-Time Financial Trading Dashboard",
-        de: "Echtzeit-Finanzhandels-Dashboard",
-        fr: "Tableau de Bord de Trading Financier en Temps Réel",
-        it: "Dashboard di Trading Finanziario in Tempo Reale"
+        en: "",
+        de: "Entwicklung eines internen Onboarding Tools für Vertriebspartner mithilfe einer BPMN Workflowengine",
+        fr: "",
+        it: ""
       },
       company: {
-        en: "TradeTech Solutions",
-        de: "TradeTech Solutions",
-        fr: "TradeTech Solutions",
-        it: "TradeTech Solutions"
+        en: "Helsana Versicherung AG",
+        de: "Helsana Versicherung AG",
+        fr: "Helsana Versicherung AG",
+        it: "Helsana Versicherung AG"
       },
       timeframe: {
-        en: "Feb 2023 - May 2023",
-        de: "Feb 2023 - Mai 2023",
-        fr: "Fév 2023 - Mai 2023",
-        it: "Feb 2023 - Mag 2023"
+        en: "",
+        de: "06.2019 – 02.2020",
+        fr: "",
+        it: ""
       },
       role: {
-        en: "Lead Frontend Developer",
-        de: "Lead Frontend Entwickler",
-        fr: "Développeur Frontend Principal",
-        it: "Lead Sviluppatore Frontend"
+        en: "Fullstack Software Engineer",
+        de: "",
+        fr: "",
+        it: ""
       },
       description: {
-        en: "Built a high-performance trading dashboard with real-time market data, interactive charts, and automated trading signals. Implemented WebSocket connections for live data streaming and complex financial calculations.",
-        de: "Entwicklung eines Hochleistungs-Trading-Dashboards mit Echtzeit-Marktdaten, interaktiven Charts und automatisierten Trading-Signalen. Implementierung von WebSocket-Verbindungen für Live-Datenstreaming und komplexe Finanzberechnungen.",
-        fr: "Création d'un tableau de bord de trading haute performance avec des données de marché en temps réel, des graphiques interactifs et des signaux de trading automatisés. Mise en œuvre de connexions WebSocket pour le streaming de données en direct et les calculs financiers complexes.",
-        it: "Sviluppo di una dashboard di trading ad alte prestazioni con dati di mercato in tempo reale, grafici interattivi e segnali di trading automatizzati. Implementazione di connessioni WebSocket per lo streaming di dati live e calcoli finanziari complessi."
+        en: "",
+        de: "Neuentwicklung eines internen Onboarding-Tools für Vertriebspartner bei Helsana unter Einsatz einer BPMN-Workflowengine und Microservice-Architektur. Verantwortung für Architektur, Umsetzung und Testing im agilen Umfeld sowie enge Zusammenarbeit mit Stakeholdern, technische Dokumentation und Bug Tracking.",
+        fr: "",
+        it: ""
       },
-      technologies: ["TypeScript", "React", "WebSocket", "D3.js", "Chart.js", "Node.js", "Redis"]
+      technologies: ["Spting Boot", "Microservice Architecture", "Camunda BPMN", "Java 11", "Angular 8", "Cypress", "Gitlab CI/CD", "Docker"]
     },
     {
       title: {
-        en: "Healthcare Patient Portal",
-        de: "Gesundheitswesen Patientenportal",
-        fr: "Portail Patient de Santé",
-        it: "Portale Paziente Sanitario"
+        en: "",
+        de: " Weiterentwicklung von Systemen im Kundenumfeld der Telekommunikation",
+        fr: "",
+        it: ""
       },
       company: {
-        en: "HealthTech Systems",
-        de: "HealthTech Systems",
-        fr: "HealthTech Systems",
-        it: "HealthTech Systems"
+        en: "Swisscom AG",
+        de: "Swisscom AG",
+        fr: "Swisscom AG",
+        it: "Swisscom AG"
       },
       timeframe: {
-        en: "Oct 2022 - Jan 2023",
-        de: "Okt 2022 - Jan 2023",
-        fr: "Oct 2022 - Janv 2023",
-        it: "Ott 2022 - Gen 2023"
+        en: "",
+        de: "01.2017 – 12.2018",
+        fr: "",
+        it: ""
       },
       role: {
-        en: "Fullstack Developer",
-        de: "Fullstack Entwickler",
-        fr: "Développeur Full Stack",
-        it: "Sviluppatore Full Stack"
+        en: "Fullstack Software Engineer",
+        de: "",
+        fr: "",
+        it: ""
       },
       description: {
-        en: "Developed a secure patient portal for healthcare providers with appointment scheduling, medical records access, and telemedicine capabilities. Ensured HIPAA compliance and implemented robust security measures.",
-        de: "Entwicklung eines sicheren Patientenportals für Gesundheitsdienstleister mit Terminplanung, Zugang zu medizinischen Unterlagen und Telemedizin-Funktionen. Gewährleistung der HIPAA-Compliance und Implementierung robuster Sicherheitsmaßnahmen.",
-        fr: "Développement d'un portail patient sécurisé pour les prestataires de soins avec planification de rendez-vous, accès aux dossiers médicaux et capacités de télémédecine. Assurer la conformité HIPAA et mettre en œuvre des mesures de sécurité robustes.",
-        it: "Sviluppo di un portale paziente sicuro per fornitori di assistenza sanitaria con pianificazione appuntamenti, accesso alle cartelle cliniche e capacità di telemedicina. Garantire la conformità HIPAA e implementare misure di sicurezza robuste."
+        en: "",
+        de: "Mitwirkung im agilen SAFe-Umfeld bei Anforderungsmanagement und Design eines Kundenportals zur Verwaltung von Stammdaten, Verträgen und Rechnungen sowie Produktkonfiguration (Telefonie, Internet, TV). Modularisierung eines monolithischen Systems und schrittweise Neuentwicklung zentraler Kernfunktionalitäten. Verantwortlich für Bug Tracking.",
+        fr: "",
+        it: ""
       },
-      technologies: ["Angular", "Java Spring", "PostgreSQL", "HL7 FHIR", "OAuth2", "AWS", "HIPAA"]
+      technologies: ["Java EE", "Angualr 6", "Gradle", "REST", "SAFe"]
     },
     {
       title: {
-        en: "Mobile Fitness Tracking App",
-        de: "Mobile Fitness-Tracking-App",
-        fr: "Application Mobile de Suivi Fitness",
-        it: "App Mobile di Monitoraggio Fitness"
+        en: "",
+        de: "Backend Entwicklung eines TransportVerwaltungssystems",
+        fr: "",
+        it: ""
       },
       company: {
-        en: "FitTech Mobile",
-        de: "FitTech Mobile",
-        fr: "FitTech Mobile",
-        it: "FitTech Mobile"
+        en: "",
+        de: "Schweizerische Bundesbahnen SBB",
+        fr: "",
+        it: ""
       },
       timeframe: {
-        en: "Jul 2022 - Sep 2022",
-        de: "Jul 2022 - Sep 2022",
-        fr: "Juil 2022 - Sept 2022",
-        it: "Lug 2022 - Set 2022"
+        en: "",
+        de: "03.2016 – 12.2016",
+        fr: "",
+        it: ""
       },
       role: {
-        en: "Mobile Developer",
-        de: "Mobile Entwickler",
-        fr: "Développeur Mobile",
-        it: "Sviluppatore Mobile"
+        en: "Software Engineer, Requirements Engineer",
+        de: "",
+        fr: "",
+        it: ""
       },
       description: {
-        en: "Created a cross-platform fitness tracking app with GPS tracking, workout planning, and social features. Integrated with wearable devices and implemented offline functionality for outdoor activities.",
-        de: "Entwicklung einer plattformübergreifenden Fitness-Tracking-App mit GPS-Tracking, Trainingsplanung und Social-Features. Integration mit Wearable-Geräten und Implementierung von Offline-Funktionalität für Outdoor-Aktivitäten.",
-        fr: "Création d'une application de suivi fitness multiplateforme avec suivi GPS, planification d'entraînement et fonctionnalités sociales. Intégration avec des appareils portables et mise en œuvre de fonctionnalités hors ligne pour les activités de plein air.",
-        it: "Sviluppo di un'app di monitoraggio fitness multipiattaforma con tracciamento GPS, pianificazione allenamenti e funzionalità social. Integrazione con dispositivi indossabili e implementazione di funzionalità offline per attività all'aperto."
+        en: "",
+        de: "Weiterentwicklung eines Transportverwaltungssystems mit Fokus auf Backend-Entwicklung im agilen Umfeld. Umsetzung von Bestell- und Verwaltungsprozessen für Kundenkarten, inklusive Anbindung externer Dienstleister und zahlreicher Schnittstellen. Verantwortung für Umsetzung, Integration und Bug Tracking.",
+        fr: "",
+        it: ""
       },
-      technologies: ["React Native", "Node.js", "MongoDB", "Google Maps API", "Bluetooth LE", "Firebase"]
+      technologies: ["Java EE", "Spring MVC", "JSF", "Spring Batch", "Queues", "Scrum/Kanban"]
     },
     {
       title: {
-        en: "Blockchain Supply Chain Tracker",
-        de: "Blockchain-Lieferketten-Tracker",
-        fr: "Traceur de Chaîne d'Approvisionnement Blockchain",
-        it: "Tracker Catena di Approvvigionamento Blockchain"
+        en: "",
+        de: "Lösungen für digitale Signaturen",
+        fr: "",
+        it: ""
       },
       company: {
-        en: "ChainTrace Solutions",
-        de: "ChainTrace Solutions",
-        fr: "ChainTrace Solutions",
-        it: "ChainTrace Solutions"
+        en: "",
+        de: "SOFTPRO GmbH (Kofax Deutschland AG seit April 2015)",
+        fr: "",
+        it: ""
       },
       timeframe: {
-        en: "Apr 2022 - Jun 2022",
-        de: "Apr 2022 - Jun 2022",
-        fr: "Avr 2022 - Juin 2022",
-        it: "Apr 2022 - Giu 2022"
+        en: "",
+        de: "09.2012 – 01.2016",
+        fr: "",
+        it: ""
       },
       role: {
-        en: "Blockchain Developer",
-        de: "Blockchain Entwickler",
-        fr: "Développeur Blockchain",
-        it: "Sviluppatore Blockchain"
+        en: "Software Engineer",
+        de: "",
+        fr: "",
+        it: ""
       },
       description: {
-        en: "Developed a blockchain-based supply chain tracking system for food safety and authenticity verification. Implemented smart contracts for automated compliance checks and real-time product tracing.",
-        de: "Entwicklung eines blockchain-basierten Lieferketten-Tracking-Systems für Lebensmittelsicherheit und Authentizitätsprüfung. Implementierung von Smart Contracts für automatisierte Compliance-Prüfungen und Echtzeit-Produktverfolgung.",
-        fr: "Développement d'un système de traçabilité de chaîne d'approvisionnement basé sur la blockchain pour la sécurité alimentaire et la vérification d'authenticité. Mise en œuvre de contrats intelligents pour les vérifications de conformité automatisées et le traçage de produits en temps réel.",
-        it: "Sviluppo di un sistema di tracciabilità della catena di approvvigionamento basato su blockchain per la sicurezza alimentare e la verifica dell'autenticità. Implementazione di smart contract per controlli di conformità automatizzati e tracciamento prodotti in tempo reale."
+        en: "",
+        de: "Entwicklung und Weiterentwicklung eines Softwareportfolios für digitale Unterschriften mit Fokus auf Android und Spring-basierte Backend-Systeme. Verantwortung für Anforderungsaufnahme, Umsetzung, Testing und Dokumentation. Aktive Mitgestaltung in agilen Teams, regelmäßiges Refactoring sowie Durchführung von Schulungen und Workshops für Kunden.",
+        fr: "",
+        it: ""
       },
-      technologies: ["Solidity", "Web3.js", "React", "Node.js", "IPFS", "Ethereum", "Truffle"]
+      technologies: ["Java EE", "Spring Framework", "Android Development", "REST", "Scrum"]
     }
+
   ],
   contactForm: {
     email: {
