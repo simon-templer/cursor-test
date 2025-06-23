@@ -31,12 +31,7 @@ export default async function HomePage({
               {content.hero.description[locale]}
             </p>
             <div className="flex gap-4">
-              <Button asChild size="lg">
-                <a href={content.hero.resumeLink} download={content.hero.downloadFilename} target="_blank" rel="noopener noreferrer">
-                  {t('home.downloadResume')}
-                </a>
-              </Button>
-              <Button variant="outline" size="lg" asChild>
+              <Button size="lg" asChild>
                 <Link href="/contact">
                   {t('home.contactMe')}
                 </Link>

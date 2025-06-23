@@ -1,26 +1,24 @@
 export const content = {
   hero: {
     name: {
-      en: "Hi, I'm John Doe",
-      de: "Hallo, ich bin John Doe",
-      fr: "Bonjour, je suis John Doe",
-      it: "Ciao, sono John Doe"
+      en: "Hi, I'm Simon Schmalz",
+      de: "Hallo, ich bin Simon Schmalz",
+      fr: "Salut, je suis Simon Schmalz",
+      it: "Ciao, sono Simon Schmalz"
     },
     title: {
-      en: "Full Stack Developer",
-      de: "Full Stack Entwickler",
-      fr: "Développeur Full Stack",
-      it: "Sviluppatore Full Stack"
+      en: "Founder & Senior Fullstack Developer at Konoto",
+      de: "Gründer & Senior Fullstack Entwickler bei Konoto",
+      fr: "Fondateur & Développeur Full Stack Senior chez Konoto",
+      it: "Fondatore & Sviluppatore Full Stack Senior presso Konoto"
     },
     description: {
-      en: "I design and code beautifully simple things, and I love what I do. Just simple like that!",
-      de: "Ich entwerfe und programmiere wunderschön einfache Dinge, und ich liebe was ich tue. So einfach ist das!",
-      fr: "Je conçois et code de belles choses simples, et j'adore ce que je fais. C'est aussi simple que ça !",
-      it: "Progetto e programmo cose bellissime e semplici, e amo quello che faccio. È così semplice!"
+      en: "I design and develop simple, impactful software — clean code, clear purpose.",
+      de: "Ich entwerfe und entwickle einfache, wirkungsvolle Software — sauberer Code, klarer Zweck.",
+      fr: "Je conçois et développe des logiciels simples et impactants — code propre, objectif clair.",
+      it: "Progetto e sviluppo software semplice e impattante — codice pulito, scopo chiaro."
     },
-    image: "/images/hero-image.jpg",
-    resumeLink: "/downloads/resume_v1.pdf",
-    downloadFilename: "John_Doe_Resume.pdf"
+    image: "/images/IMG_4833.jpg"
   },
   about: {
     title: {

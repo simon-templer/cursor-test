@@ -8,7 +8,6 @@
   "home": {
     "title": "Bienvenue",
     "description": "Ceci est la page d'accueil",
-    "downloadResume": "Télécharger le CV",
     "contactMe": "Me contacter",
     "heroImageAlt": "Image héro"
   },
