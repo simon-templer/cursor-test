@@ -68,9 +68,7 @@ export default function ContactPage({ params }: { params: Promise<{ locale: 'en'
         <div className="flex-1 flex flex-col justify-center">
           <h1 className="text-5xl font-serif mb-8">{t('header')}</h1>
           <hr className="border-t border-muted mb-8" />
-          <h2 className="text-3xl mb-4">{t('getInTouch')}</h2>
           <div className="mb-2 font-bold">{t('email')}: <a href={`mailto:${contact.email[locale]}`} className="underline text-primary">{contact.email[locale]}</a></div>
-          <div className="mb-4 font-bold">{t('phone')}: <span className="font-normal">{contact.phone[locale]}</span></div>
           <p className="mb-4 text-base text-muted-foreground">{contact.description[locale]}</p>
         </div>
         {/* Right: Contact Form */}

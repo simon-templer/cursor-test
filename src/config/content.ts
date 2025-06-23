@@ -699,46 +699,18 @@ export const content = {
       technologies: ["Solidity", "Web3.js", "React", "Node.js", "IPFS", "Ethereum", "Truffle"]
     }
   ],
-  contact: {
-    title: {
-      en: "Get In Touch",
-      de: "Kontakt",
-      fr: "Contact",
-      it: "Contatti"
-    },
-    description: {
-      en: "Feel free to reach out to me for any questions or opportunities!",
-      de: "Kontaktieren Sie mich gerne bei Fragen oder Gelegenheiten!",
-      fr: "N'hésitez pas à me contacter pour toute question ou opportunité !",
-      it: "Non esitate a contattarmi per domande o opportunità!"
-    },
-    email: "john.doe@example.com",
-    phone: "+1 234 567 890",
-    location: {
-      en: "New York, USA",
-      de: "New York, USA",
-      fr: "New York, États-Unis",
-      it: "New York, USA"
-    }
-  },
   contactForm: {
     email: {
-      en: "name@domain.com",
-      de: "name@domain.com",
-      fr: "name@domain.com",
-      it: "name@domain.com"
-    },
-    phone: {
-      en: "(555)123-4567",
-      de: "(555)123-4567",
-      fr: "(555)123-4567",
-      it: "(555)123-4567"
+      en: "contact@konoto.ch",
+      de: "contact@konoto.ch",
+      fr: "contact@konoto.ch",
+      it: "contact@konoto.ch"
     },
     description: {
-      en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar nisi at imperdiet pharetra.",
-      de: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar nisi at imperdiet pharetra.",
-      fr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar nisi at imperdiet pharetra.",
-      it: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar nisi at imperdiet pharetra."
+      en: "Have a question or want to get in touch? Fill out the form and we'll get back to you as soon as possible.",
+      de: "Haben Sie eine Frage oder möchten Sie Kontakt aufnehmen? Füllen Sie das Formular aus und wir melden uns so schnell wie möglich bei Ihnen.",
+      fr: "Vous avez une question ou souhaitez nous contacter ? Remplissez le formulaire et nous vous répondrons dans les plus brefs délais.",
+      it: "Hai una domanda o vuoi metterti in contatto? Compila il modulo e ti risponderemo il prima possibile."
     }
   },
   socials: [

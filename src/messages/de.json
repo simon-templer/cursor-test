@@ -20,9 +20,7 @@
   },
   "contact": {
     "header": "Kontakt",
-    "getInTouch": "Kontakt aufnehmen",
     "email": "E-Mail",
-    "phone": "Telefon",
     "message": "Nachricht",
     "send": "Senden",
     "namePlaceholder": "Name",
