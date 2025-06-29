@@ -1,5 +1,5 @@
 import React from 'react';
-import { AnimatedCard } from '../ui/AnimatedCard';
+import { AnimatedCard } from '@/components/ui/AnimatedCard';
 
 interface Certificate {
   name: Record<string, string>;
