@@ -37,12 +37,8 @@
   },
   "about": {
     "header": "À Propos",
-    "subheader": "Un peu sur moi",
     "workTimelineHeader": "Parcours professionnel",
     "bareSkillsHeader": "Skills",
-    "capabilitiesHeader": "Compétences",
-    "skillsAndToolsHeader": "Compétences & Outils",
-    "skillsAndToolsToggle": "Afficher: {category}",
     "certificatesHeader": "Certifications & Réalisations"
   }
 } 

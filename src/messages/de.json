@@ -37,12 +37,8 @@
   },
   "about": {
     "header": "Über Mich",
-    "subheader": "ein bisschen über mich",
     "workTimelineHeader": "Arbeitslaufbahn",
     "bareSkillsHeader": "Fähigkeiten",
-    "capabilitiesHeader": "Kompetenzen",
-    "skillsAndToolsHeader": "Fähigkeiten & Werkzeuge",
-    "skillsAndToolsToggle": "Anzeigen: {category}",
     "certificatesHeader": "Zertifikate & Erfolge"
   }
 } 

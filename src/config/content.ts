@@ -27,17 +27,11 @@ export const content = {
       fr: "À Propos",
       it: "Chi Sono"
     },
-    description: {
-      en: "I'm a passionate Full Stack Developer with a strong foundation in web technologies. I love creating beautiful and functional applications that solve real-world problems.",
-      de: "Ich bin ein leidenschaftlicher Full Stack Entwickler mit einer soliden Grundlage in Web-Technologien. Ich liebe es, schöne und funktionale Anwendungen zu erstellen, die reale Probleme lösen.",
-      fr: "Je suis un développeur Full Stack passionné avec une solide base en technologies web. J'adore créer des applications belles et fonctionnelles qui résolvent des problèmes réels.",
-      it: "Sono uno sviluppatore Full Stack appassionato con una solida base nelle tecnologie web. Amo creare applicazioni belle e funzionali che risolvono problemi reali."
-    },
     aboutText: {
-      en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
-      de: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
-      fr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
-      it: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies."
+      en: "",
+      de: "Ich bin Softwareentwickler und Webdesigner mit einem Faible für klare Strukturen, durchdachtes Design und effiziente Lösungen. Mein Schwerpunkt liegt auf der Entwicklung ganzheitlicher digitaler Produkte – von der Strategie und Informationsarchitektur über UX/UI-Design bis zur Front- und Backend-Entwicklung. Ich gehe komplexe Herausforderungen mit einem flexiblen, analytischen Ansatz an und arbeite lösungsorientiert und im engen Austausch mit Kunden und Teams – mit dem Ziel, digitale Erlebnisse zu schaffen, die sowohl funktional als auch ästhetisch überzeugen.",
+      fr: "",
+      it: "."
     },
     workTimeline: [
       {
@@ -183,28 +177,28 @@ export const content = {
       },
       {
         name: {
-          en: "JavaScript",
-          de: "JavaScript",
-          fr: "JavaScript",
-          it: "JavaScript"
+          en: "Angular",
+          de: "Angular",
+          fr: "Angular",
+          it: "Angular"
         },
         percent: 80
       },
       {
         name: {
-          en: "React",
-          de: "React",
-          fr: "React",
-          it: "React"
+          en: "Kubernetes",
+          de: "Kubernetes",
+          fr: "Kubernetes",
+          it: "Kubernetes"
         },
         percent: 75
       },
       {
         name: {
-          en: "SQL",
-          de: "SQL",
-          fr: "SQL",
-          it: "SQL"
+          en: "Microservices",
+          de: "Microservices",
+          fr: "Microservices",
+          it: "Microservices"
         },
         percent: 80
       },
@@ -219,177 +213,14 @@ export const content = {
       },
       {
         name: {
-          en: "HTML & CSS",
-          de: "HTML & CSS",
-          fr: "HTML & CSS",
-          it: "HTML & CSS"
+          en: "Domain Driven Design",
+          de: "Domain Driven Design",
+          fr: "Domain Driven Design",
+          it: "Domain Driven Design"
         },
         percent: 75
       }
     ],
-    capabilities: [
-      {
-        icon: "🖥️",
-        title: {
-          en: "Backend Development",
-          de: "Backend-Entwicklung",
-          fr: "Développement Backend",
-          it: "Sviluppo Backend"
-        },
-        items: {
-          en: [
-            "Java (Spring Boot, JPA, Hibernate)",
-            "RESTful API Design",
-            "Microservices Architecture",
-            "Unit & Integration Testing",
-            "Security & Authentication"
-          ],
-          de: [
-            "Java (Spring Boot, JPA, Hibernate)",
-            "RESTful API Design",
-            "Microservices Architektur",
-            "Unit- & Integrationstests",
-            "Sicherheit & Authentifizierung"
-          ],
-          fr: [
-            "Java (Spring Boot, JPA, Hibernate)",
-            "Conception d'API RESTful",
-            "Architecture microservices",
-            "Tests unitaires & d'intégration",
-            "Sécurité & authentification"
-          ],
-          it: [
-            "Java (Spring Boot, JPA, Hibernate)",
-            "Progettazione API RESTful",
-            "Architettura a microservizi",
-            "Test unitari e di integrazione",
-            "Sicurezza e autenticazione"
-          ]
-        }
-      },
-      {
-        icon: "🌐",
-        title: {
-          en: "Frontend Development",
-          de: "Frontend-Entwicklung",
-          fr: "Développement Frontend",
-          it: "Sviluppo Frontend"
-        },
-        items: {
-          en: [
-            "JavaScript (ES6+)",
-            "React.js",
-            "HTML5 & CSS3",
-            "Responsive Web Design",
-            "State Management (Redux)"
-          ],
-          de: [
-            "JavaScript (ES6+)",
-            "React.js",
-            "HTML5 & CSS3",
-            "Responsives Webdesign",
-            "State Management (Redux)"
-          ],
-          fr: [
-            "JavaScript (ES6+)",
-            "React.js",
-            "HTML5 & CSS3",
-            "Design web adaptatif",
-            "Gestion d'état (Redux)"
-          ],
-          it: [
-            "JavaScript (ES6+)",
-            "React.js",
-            "HTML5 & CSS3",
-            "Web design responsivo",
-            "Gestione stato (Redux)"
-          ]
-        }
-      },
-      {
-        icon: "☁️",
-        title: {
-          en: "DevOps & Cloud",
-          de: "DevOps & Cloud",
-          fr: "DevOps & Cloud",
-          it: "DevOps & Cloud"
-        },
-        items: {
-          en: [
-            "Docker & Kubernetes",
-            "CI/CD Pipelines",
-            "AWS & Azure",
-            "Monitoring & Logging",
-            "Agile & Scrum"
-          ],
-          de: [
-            "Docker & Kubernetes",
-            "CI/CD-Pipelines",
-            "AWS & Azure",
-            "Monitoring & Logging",
-            "Agile & Scrum"
-          ],
-          fr: [
-            "Docker & Kubernetes",
-            "Pipelines CI/CD",
-            "AWS & Azure",
-            "Surveillance & journalisation",
-            "Agile & Scrum"
-          ],
-          it: [
-            "Docker & Kubernetes",
-            "Pipeline CI/CD",
-            "AWS & Azure",
-            "Monitoraggio & Logging",
-            "Agile & Scrum"
-          ]
-        }
-      }
-    ],
-    skillsAndTools: {
-      categories: [
-        {
-          key: 'tech',
-          label: {
-            en: 'Tech',
-            de: 'Technologien',
-            fr: 'Technologies',
-            it: 'Tecnologie'
-          },
-          items: [
-            { name: 'Java', icon: '☕' },
-            { name: 'Spring Boot', icon: '🌱' },
-            { name: 'React', icon: '⚛️' },
-            { name: 'JavaScript', icon: '🟨' },
-            { name: 'TypeScript', icon: '🔷' },
-            { name: 'SQL', icon: '🗄️' },
-            { name: 'HTML5', icon: '📄' },
-            { name: 'CSS3', icon: '🎨' },
-            { name: 'Docker', icon: '🐳' },
-            { name: 'Kubernetes', icon: '☸️' }
-          ]
-        },
-        {
-          key: 'tools',
-          label: {
-            en: 'Tools',
-            de: 'Werkzeuge',
-            fr: 'Outils',
-            it: 'Strumenti'
-          },
-          items: [
-            { name: 'IntelliJ IDEA', icon: '💡' },
-            { name: 'VS Code', icon: '📝' },
-            { name: 'Git', icon: '🔧' },
-            { name: 'Maven', icon: '📦' },
-            { name: 'Jenkins', icon: '🤖' },
-            { name: 'Postman', icon: '📬' },
-            { name: 'Figma', icon: '🎨' },
-            { name: 'Jira', icon: '📋' }
-          ]
-        }
-      ]
-    },
     certificates: [
       {
         name: {
