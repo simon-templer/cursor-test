@@ -18,7 +18,7 @@ export const content = {
       fr: "Je conçois et développe des logiciels simples et impactants — code propre, objectif clair.",
       it: "Progetto e sviluppo software semplice e impattante — codice pulito, scopo chiaro."
     },
-    image: "/images/IMG_4833.jpg"
+    image: "/images/IMG_4833.JPG"
   },
   about: {
     title: {
