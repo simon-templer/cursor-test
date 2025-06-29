@@ -4,7 +4,6 @@ import React from "react";
 import { content } from "@/config/content";
 import { useTranslations, useLocale } from 'next-intl';
 import { routing } from "@/i18n/routing";
-import { AnimatedIntroText } from "@/components/AnimatedIntroText";
 import { PortfolioContent } from "./PortfolioContent";
 import { motion } from "framer-motion";
 
@@ -57,7 +56,20 @@ export default function PortfolioPage() {
         </motion.div>
         
         {/* Portfolio intro text */}
-        <AnimatedIntroText />
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ 
+            duration: 0.7, 
+            ease: "easeOut"
+          }}
+          className="w-full mb-8 sm:mb-12"
+        >
+          <p className="text-foreground/80 text-base sm:text-lg leading-relaxed max-w-3xl">
+            {(content as Content).portfolio.intro[locale]}
+          </p>
+        </motion.div>
         
         {/* Projects grid with Framer Motion animations */}
         <PortfolioContent projects={(content as Content).projects} />
