@@ -3,6 +3,7 @@
 import React from "react";
 import { AnimatedCard } from "@/components/ui/AnimatedCard";
 import { motion } from "framer-motion";
+import { useLocale } from 'next-intl';
 
 type Locale = "en" | "de" | "fr" | "it";
 
@@ -21,10 +22,11 @@ type Project = {
 
 interface PortfolioContentProps {
   projects: Project[];
-  locale: Locale;
 }
 
-export function PortfolioContent({ projects, locale }: PortfolioContentProps) {
+export function PortfolioContent({ projects }: PortfolioContentProps) {
+  const locale = useLocale() as Locale;
+
   return (
     <div className="w-full flex flex-col gap-12 sm:gap-16">
       {projects?.map((project, idx) => (

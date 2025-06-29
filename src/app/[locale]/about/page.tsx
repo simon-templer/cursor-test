@@ -2,6 +2,7 @@
 import { content } from '@/config/content';
 import { useTranslations } from 'next-intl';
 import React from 'react';
+import { motion } from 'framer-motion';
 import { WorkTimeline } from '@/components/about/WorkTimeline';
 import { SkillsBarSection } from '@/components/about/SkillsBar';
 import { Certificates } from '@/components/about/Certificates';
@@ -54,12 +55,17 @@ export default function AboutPage({ params }: { params: Promise<{ locale: 'en' |
         </AccentLine>
 
         {/* Enhanced decorative element at the bottom */}
-        <div className="w-full mt-8 sm:mt-12 pt-8 sm:pt-12 pb-8 sm:pb-12 text-center animate-in fade-in duration-1000 delay-500">
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="w-full mt-8 sm:mt-12 pt-8 sm:pt-12 pb-8 sm:pb-12 text-center"
+        >
           <div className="inline-block w-16 sm:w-24 h-1 bg-gradient-to-r from-transparent via-primary/30 to-transparent rounded-full mb-3 sm:mb-4"></div>
           <p className="text-muted-foreground text-xs sm:text-sm font-medium">
             {t('endMessage')}
           </p>
-        </div>
+        </motion.div>
       </div>
     </main>
   );
