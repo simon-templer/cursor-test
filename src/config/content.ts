@@ -420,7 +420,13 @@ export const content = {
           it: "Architettura"
         }
       }
-    ]
+    ],
+    endMessage: {
+      en: "Thanks for learning more about me!",
+      de: "Vielen Dank für das Interesse an meiner Person!",
+      fr: "Merci de vous être intéressé à mon parcours !",
+      it: "Grazie per l'interesse nel mio percorso!"
+    }
   },
   skills: {
     title: {

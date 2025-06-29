@@ -39,6 +39,7 @@
     "header": "About Me",
     "workTimelineHeader": "Work Timeline",
     "bareSkillsHeader": "Skills",
-    "certificatesHeader": "Certificates & Achievements"
+    "certificatesHeader": "Certificates & Achievements",
+    "endMessage": "Thanks for learning more about me!"
   }
 } 
