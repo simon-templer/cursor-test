@@ -16,18 +16,19 @@ export default async function HomePage({
   const t = await getTranslations(); 
   
   return (
-    <main className="h-[calc(100vh-4rem)]">
+    <main className="min-h-[calc(100vh-4rem)]">
       {/* Hero Section */}
-      <section className="h-full w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 h-full w-full items-center">
-          <div className="flex flex-col justify-center items-start h-full w-full pl-12">
-            <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
+      <section className="min-h-[calc(100vh-4rem)] w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[calc(100vh-4rem)] w-full items-center">
+          {/* Content Section */}
+          <div className="flex flex-col justify-center items-start h-full w-full px-6 sm:px-8 lg:px-12 py-8 lg:py-0 order-2 lg:order-1">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight mb-4">
               {content.hero.name[locale]}
             </h1>
-            <h2 className="text-2xl sm:text-3xl text-muted-foreground mb-4">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground mb-4">
               {content.hero.title[locale]}
             </h2>
-            <p className="text-lg text-muted-foreground mb-6">
+            <p className="text-base sm:text-lg lg:text-xl text-muted-foreground mb-6 max-w-2xl">
               {content.hero.description[locale]}
             </p>
             <div className="flex gap-4">
@@ -38,7 +39,9 @@ export default async function HomePage({
               </Button>
             </div>
           </div>
-          <div className="relative w-full h-full">
+          
+          {/* Hero Image Section */}
+          <div className="relative w-full h-[50vh] sm:h-[60vh] lg:h-full order-1 lg:order-2">
             <HeroImage src={content.hero.image} alt={t('home.heroImageAlt')} />
           </div>
         </div>
