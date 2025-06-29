@@ -224,10 +224,10 @@ export const content = {
     certificates: [
       {
         name: {
-          en: "Certified Kubernetes Administrator (CKA)",
-          de: "Zertifizierter Kubernetes Administrator (CKA)",
-          fr: "Administrateur Kubernetes Certifié (CKA)",
-          it: "Amministratore Kubernetes Certificato (CKA)"
+          en: "Certified Kubernetes Application Developer (CKAD)",
+          de: "Certified Kubernetes Application Developer (CKAD)",
+          fr: "",
+          it: ""
         },
         issuer: {
           en: "Cloud Native Computing Foundation (CNCF)",
@@ -237,98 +237,188 @@ export const content = {
         },
         date: "2024",
         icon: "☸️",
-        level: "Advanced",
-        category: "Cloud & DevOps"
+        category: {
+          en: "Cloud & DevOps",
+          de: "Cloud & DevOps",
+          fr: "Cloud & DevOps",
+          it: "Cloud & DevOps"
+        }
       },
       {
         name: {
-          en: "AWS Solutions Architect - Associate",
-          de: "AWS Solutions Architect - Associate",
-          fr: "AWS Solutions Architect - Associate",
-          it: "AWS Solutions Architect - Associate"
+          en: "",
+          de: "Camunda 8 - Platform für Entwickler",
+          fr: "",
+          it: ""
         },
         issuer: {
-          en: "Amazon Web Services",
-          de: "Amazon Web Services",
-          fr: "Amazon Web Services",
-          it: "Amazon Web Services"
+          en: "Camunda",
+          de: "Camunda",
+          fr: "Camunda",
+          it: "Camunda"
         },
         date: "2023",
-        icon: "☁️",
-        level: "Intermediate",
-        category: "Cloud & DevOps"
+        icon: "⚙️",
+        category: {
+          en: "BPMN",
+          de: "BPMN",
+          fr: "BPMN",
+          it: "BPMN"
+        }
       },
       {
         name: {
-          en: "Azure Solutions Architect Expert",
-          de: "Azure Solutions Architect Expert",
-          fr: "Expert Architecte de Solutions Azure",
-          it: "Esperto Architetto di Soluzioni Azure"
+          en: "ISAQB – Advanced Level SOFT",
+          de: "ISAQB – Advanced Level SOFT",
+          fr: "",
+          it: ""
         },
         issuer: {
-          en: "Microsoft",
-          de: "Microsoft",
-          fr: "Microsoft",
-          it: "Microsoft"
+          en: "iSAQB e. V.",
+          de: "iSAQB e. V.",
+          fr: "iSAQB e. V.",
+          it: "iSAQB e. V."
         },
-        date: "2023",
-        icon: "🔷",
-        level: "Expert",
-        category: "Cloud & DevOps"
+        date: "2019",
+        icon: "🏗️",
+        category: {
+          en: "Architecture",
+          de: "Architektur",
+          fr: "Architecture",
+          it: "Architettura"
+        }
       },
       {
         name: {
-          en: "Google Cloud Professional Cloud Architect",
-          de: "Google Cloud Professional Cloud Architect",
-          fr: "Architecte Cloud Professionnel Google Cloud",
-          it: "Architetto Cloud Professionale Google Cloud"
+          en: "ISAQB – Advanced Level IMPROVE",
+          de: "ISAQB – Advanced Level IMPROVE",
+          fr: "",
+          it: ""
         },
         issuer: {
-          en: "Google Cloud",
-          de: "Google Cloud",
-          fr: "Google Cloud",
-          it: "Google Cloud"
+          en: "iSAQB e. V.",
+          de: "iSAQB e. V.",
+          fr: "iSAQB e. V.",
+          it: "iSAQB e. V."
         },
-        date: "2023",
-        icon: "🌐",
-        level: "Expert",
-        category: "Cloud & DevOps"
+        date: "2018",
+        icon: "📈",
+        category: {
+          en: "Architecture",
+          de: "Architektur",
+          fr: "Architecture",
+          it: "Architettura"
+        }
       },
       {
         name: {
-          en: "Certified Kubernetes Application Developer (CKAD)",
-          de: "Zertifizierter Kubernetes Anwendungsentwickler (CKAD)",
-          fr: "Développeur d'Applications Kubernetes Certifié (CKAD)",
-          it: "Sviluppatore di Applicazioni Kubernetes Certificato (CKAD)"
+          en: "Certified SAFe 4 Release Train Engineer ",
+          de: "Certified SAFe 4 Release Train Engineer ",
+          fr: "",
+          it: ""
         },
         issuer: {
-          en: "Cloud Native Computing Foundation (CNCF)",
-          de: "Cloud Native Computing Foundation (CNCF)",
-          fr: "Cloud Native Computing Foundation (CNCF)",
-          it: "Cloud Native Computing Foundation (CNCF)"
+          en: "Scaled Agile, Inc.",
+          de: "Scaled Agile, Inc.",
+          fr: "Scaled Agile, Inc.",
+          it: "Scaled Agile, Inc."
         },
-        date: "2024",
-        icon: "⚛️",
-        level: "Advanced",
-        category: "Development"
+        date: "2019",
+        icon: "🚂",
+        category: {
+          en: "Method",
+          de: "Methode",
+          fr: "Méthode",
+          it: "Metodo"
+        }
       },
       {
         name: {
-          en: "Docker Certified Associate",
-          de: "Docker Certified Associate",
-          fr: "Associé Certifié Docker",
-          it: "Associato Certificato Docker"
+          en: "ISAQB – Advanced Level FLEX",
+          de: "ISAQB – Advanced Level FLEX",
+          fr: "",
+          it: ""
         },
         issuer: {
-          en: "Docker Inc.",
-          de: "Docker Inc.",
-          fr: "Docker Inc.",
-          it: "Docker Inc."
+          en: "iSAQB e. V.",
+          de: "iSAQB e. V.",
+          fr: "iSAQB e. V.",
+          it: "iSAQB e. V."
         },
-        date: "2023",
-        icon: "🐳",
-        level: "Intermediate",
-        category: "Development"
+        date: "2017",
+        icon: "🎯",
+        category: {
+          en: "Architecture",
+          de: "Architektur",
+          fr: "Architecture",
+          it: "Architettura"
+        }
+      },
+      {
+        name: {
+          en: "Angular 2 for Developers",
+          de: "Angular 2 für Entwickler",
+          fr: "",
+          it: ""
+        },
+        issuer: {
+          en: "thecodecampus",
+          de: "thecodecampus",
+          fr: "thecodecampus",
+          it: "thecodecampus"
+        },
+        date: "2017",
+        icon: "⚡",
+        category: {
+          en: "Development",
+          de: "Entwicklung",
+          fr: "Développement",
+          it: "Sviluppo"
+        }
+      },
+      {
+        name: {
+          en: "Scrum Master",
+          de: "Scrum Master",
+          fr: "",
+          it: ""
+        },
+        issuer: {
+          en: "Scrum.org",
+          de: "Scrum.org",
+          fr: "Scrum.org",
+          it: "Scrum.org"
+        },
+        date: "2017",
+        icon: "🏉",
+        category: {
+          en: "Method",
+          de: "Methode",
+          fr: "Méthode",
+          it: "Metodo"
+        }
+      },
+      {
+        name: {
+          en: "ISAQB – Foundation Level",
+          de: "ISAQB – Foundation Level",
+          fr: "",
+          it: ""
+        },
+        issuer: {
+          en: "iSAQB e. V.",
+          de: "iSAQB e. V.",
+          fr: "iSAQB e. V.",
+          it: "iSAQB e. V."
+        },
+        date: "2017",
+        icon: "🏛️",
+        category: {
+          en: "Architecture",
+          de: "Architektur",
+          fr: "Architecture",
+          it: "Architettura"
+        }
       }
     ]
   },

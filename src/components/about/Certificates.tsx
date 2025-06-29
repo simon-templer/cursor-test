@@ -5,8 +5,7 @@ interface Certificate {
   issuer: Record<string, string>;
   date: string;
   icon: string;
-  level: string;
-  category: string;
+  category: Record<string, string>;
 }
 
 interface CertificatesProps {
@@ -15,57 +14,13 @@ interface CertificatesProps {
 }
 
 export function Certificates({ certificates, locale }: CertificatesProps) {
-  const [selectedCategory, setSelectedCategory] = React.useState<string>('All');
   const [hoveredCert, setHoveredCert] = React.useState<number | null>(null);
-
-  // Get unique categories
-  const categories = React.useMemo(() => {
-    const cats = [...new Set(certificates.map(cert => cert.category))];
-    return ['All', ...cats];
-  }, [certificates]);
-
-  // Filter certificates by category
-  const filteredCertificates = React.useMemo(() => {
-    if (selectedCategory === 'All') return certificates;
-    return certificates.filter(cert => cert.category === selectedCategory);
-  }, [certificates, selectedCategory]);
-
-  // Get level color
-  const getLevelColor = (level: string) => {
-    switch (level) {
-      case 'Expert':
-        return 'bg-gradient-to-r from-purple-500 to-pink-500';
-      case 'Advanced':
-        return 'bg-gradient-to-r from-blue-500 to-cyan-500';
-      case 'Intermediate':
-        return 'bg-gradient-to-r from-green-500 to-emerald-500';
-      default:
-        return 'bg-gradient-to-r from-gray-500 to-slate-500';
-    }
-  };
 
   return (
     <div className="w-full">
-      {/* Category Filter */}
-      <div className="flex flex-wrap gap-3 mb-8 justify-center">
-        {categories.map((category) => (
-          <button
-            key={category}
-            onClick={() => setSelectedCategory(category)}
-            className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
-              selectedCategory === category
-                ? 'bg-primary text-background shadow-lg'
-                : 'bg-muted text-muted-foreground hover:bg-muted/80'
-            }`}
-          >
-            {category}
-          </button>
-        ))}
-      </div>
-
       {/* Certificates Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filteredCertificates.map((cert, index) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {certificates.map((cert, index) => (
           <div
             key={index}
             className={`relative group cursor-pointer transition-all duration-300 transform ${
@@ -76,12 +31,9 @@ export function Certificates({ certificates, locale }: CertificatesProps) {
           >
             {/* Certificate Card */}
             <div className="bg-card border border-border rounded-xl p-6 h-full shadow-sm hover:shadow-lg transition-all duration-300">
-              {/* Icon and Level Badge */}
-              <div className="flex items-start justify-between mb-4">
+              {/* Icon */}
+              <div className="flex items-start justify-start mb-4">
                 <div className="text-4xl">{cert.icon}</div>
-                <div className={`px-2 py-1 rounded-full text-xs font-bold text-white ${getLevelColor(cert.level)}`}>
-                  {cert.level}
-                </div>
               </div>
 
               {/* Certificate Name */}
@@ -100,7 +52,7 @@ export function Certificates({ certificates, locale }: CertificatesProps) {
                   {cert.date}
                 </span>
                 <span className="text-xs px-2 py-1 bg-muted rounded-full text-muted-foreground">
-                  {cert.category}
+                  {cert.category[locale]}
                 </span>
               </div>
 
@@ -115,11 +67,11 @@ export function Certificates({ certificates, locale }: CertificatesProps) {
       </div>
 
       {/* Empty State */}
-      {filteredCertificates.length === 0 && (
+      {certificates.length === 0 && (
         <div className="text-center py-12">
           <div className="text-6xl mb-4">📜</div>
           <p className="text-muted-foreground">
-            No certificates found for this category.
+            No certificates found.
           </p>
         </div>
       )}
