@@ -2,8 +2,9 @@ import React from "react";
 import { content } from "@/config/content";
 import { getTranslations } from 'next-intl/server';
 import { routing } from "@/i18n/routing";
-import { AnimatedProjectCard } from "@/components/AnimatedProjectCard";
+import { AnimatedCard } from "@/components/ui/AnimatedCard";
 import { AnimatedIntroText } from "@/components/AnimatedIntroText";
+import { getSubElementDelay } from "@/lib/animations";
 import styles from './portfolio.module.css';
 
 type Locale = typeof routing.locales[number];
@@ -54,12 +55,42 @@ export default async function PortfolioPage({
         {/* Projects grid with staggered animations */}
         <div className="w-full flex flex-col gap-12 sm:gap-16">
           {(content as Content).projects?.map((project, idx) => (
-            <AnimatedProjectCard 
+            <AnimatedCard 
               key={idx} 
-              project={project} 
-              locale={locale} 
               index={idx}
-            />
+              className="sm:p-8 flex flex-col gap-2"
+            >
+              <div className="flex items-start justify-between mb-2">
+                <h2 className="text-xl sm:text-2xl font-bold mb-1 group-hover:text-primary transition-colors duration-300 group-hover:scale-105 transform">
+                  {project.title[locale]}
+                </h2>
+                <div className="hidden sm:block w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-lg group-hover:from-primary/20 group-hover:to-secondary/20 transition-all duration-300 group-hover:rotate-12 group-hover:scale-110"></div>
+              </div>
+              
+              <div className="text-xs sm:text-sm text-muted-foreground mb-3 flex flex-wrap items-center gap-1 sm:gap-2">
+                <span className="font-medium text-primary/80 group-hover:text-primary transition-colors duration-300">{project.company[locale]}</span>
+                <span className="text-muted-foreground/60 group-hover:text-primary/60 transition-colors duration-300 hidden sm:inline">•</span>
+                <span className="group-hover:text-foreground/90 transition-colors duration-300">{project.timeframe[locale]}</span>
+                <span className="text-muted-foreground/60 group-hover:text-primary/60 transition-colors duration-300 hidden sm:inline">•</span>
+                <span className="italic text-foreground/70 group-hover:text-primary/80 transition-colors duration-300">{project.role[locale]}</span>
+              </div>
+              
+              <p className="mb-4 text-foreground/80 leading-relaxed group-hover:text-foreground transition-colors duration-300 group-hover:leading-relaxed text-sm sm:text-base">
+                {project.description[locale]}
+              </p>
+              
+              <div className="flex flex-wrap gap-1.5 sm:gap-2 mt-auto">
+                {project.technologies.map((tech, tIdx) => (
+                  <span 
+                    key={tIdx} 
+                    className="bg-muted/50 text-muted-foreground px-2 sm:px-3 py-1 rounded-full text-xs font-mono border border-border/50 hover:bg-primary/10 hover:text-primary hover:border-primary/30 transition-all duration-300 cursor-default hover:scale-105 transform hover:shadow-sm"
+                    style={{ animationDelay: `${getSubElementDelay(idx, tIdx)}ms` }}
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </AnimatedCard>
           ))}
         </div>
         
